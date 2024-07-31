@@ -65,10 +65,12 @@ const HomePage = () => {
                             <div className="row">
                                 <div className="col-md-12 col-lg-6">
                                     <h2 className="font-weight-400">Hi, I’m Aman <br />
-                                    {/* <p className="font-weight-300" style={{ fontSize: "20px" }}> Bachelor of Technology | IIT Gandhinagar</p></h2> */}
-                                   </h2>
+                                        {/* <p className="font-weight-300" style={{ fontSize: "20px" }}> Bachelor of Technology | IIT Gandhinagar</p></h2> */}
+                                    </h2>
 
-                                   <p  style={{ fontSize: "18px" }}> I have completed my B.Tech. in Civil Engineering with Minors in Computer Science and Engineering from IIT Gandhinagar, India.</p>
+                                    <p style={{ fontSize: "18px" }}>
+                                    I completed my B.Tech. in Civil Engineering with Minors in Computer Science and Engineering from IIT Gandhinagar, India.
+                                    </p>
 
                                     {/* <div className="progress-section">
                                             <div className="progress-bx">
@@ -94,14 +96,16 @@ const HomePage = () => {
                                             </div>
                                         </div> */}
                                     {/* <h3 className="m-b10">The Project</h3> */}
-                                    <p style={{ fontSize: "18px",textAlign:"justify" }}>
-                                    I specialize in Full Stack WebGIS Development, where I build interactive and visually appealing web-based GIS applications.
-                                    
-                                    I am proficient in front-end technologies like ReactJS and NextJS, coupled with proficiency in back-end development using Django, Flask and NodeJS. I excel in crafting seamless user experiences, leveraging database management expertise in MongoDB and PostgreSQL.
-                                   
-                                        Additionally, I have a deep understanding of GIS concepts and software like ArcGIS, QGIS, GDAL, Geoserver, Google earth engine as well as experience with mapping libraries like Leaflet JS, OpenLayers,  Mapbox, and Esri ArcGIS JavaScript API. I am adept at creating and integrating GIS data into web applications and working with a variety of GIS data formats.
+                                    <p style={{ fontSize: "18px", textAlign: "justify" }}>
+                                    I specialize in Full Stack WebGIS Development, creating interactive and visually appealing web-based GIS applications. 
+                                    I am skilled in front-end technologies like ReactJS and NextJS, and proficient in back-end development using Django, Flask, and NodeJS. 
+                                    I focus on crafting seamless user experiences and have expertise in database management with MongoDB and PostgreSQL.
 
-                                        
+                                    I have a strong understanding of GIS concepts and software such as ArcGIS, QGIS, GDAL, Google Earth Engine and Geoserver. 
+                                    I also have experience with mapping libraries like Leaflet JS, OpenLayers, Mapbox, and Esri ArcGIS JavaScript API. 
+                                    I am adept at integrating GIS data into web applications and working with various GIS data formats.
+
+
 
                                     </p>
                                 </div>

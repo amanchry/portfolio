@@ -143,7 +143,7 @@ const Contact = () => {
                                                             className="form-control"
                                                             value={formData.phone}
                                                             onChange={handleChange}
-                                                            placeholder="Your Phone Number (*Optional)" />
+                                                            placeholder="Your Phone Number" />
                                                     </div>
                                                 </div>
                                             </div>
