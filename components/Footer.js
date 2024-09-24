@@ -18,7 +18,8 @@ class Footer extends Component {
                                     </h4>
                                     <a href="https://clustrmaps.com/site/1c1eu" target='_blank' title="Visit tracker">
                                         Visitors count
-                                        {/* <img src="//www.clustrmaps.com/map_v2.png?d=K8WdSOM7rI24lyqsLSPAv43unUJeVyGLR-WYhFLHRTs&cl=ffffff" /> */}
+
+                                        <img style={{display:"none"}} src="//www.clustrmaps.com/map_v2.png?d=K8WdSOM7rI24lyqsLSPAv43unUJeVyGLR-WYhFLHRTs&cl=ffffff" />
                                     </a>
 
                                     <ul className="list-inline m-a0 text-center">
