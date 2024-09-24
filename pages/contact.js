@@ -156,7 +156,7 @@ const Contact = () => {
                                                             value={formData.email}
                                                             onChange={handleChange}
 
-                                                            className="form-control" required placeholder="Your Email Id" />
+                                                            className="form-control" required placeholder="Your Email" />
                                                     </div>
                                                 </div>
                                             </div>

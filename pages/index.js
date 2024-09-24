@@ -69,7 +69,7 @@ const HomePage = () => {
                                     </h2>
 
                                     <p style={{ fontSize: "18px" }}>
-                                    I completed my B.Tech. in Civil Engineering with Minors in Computer Science and Engineering from IIT Gandhinagar, India.
+                                    I graduated from IIT Gandhinagar, India, with a major in Civil Engineering and a minor in Computer Science and Engineering.
                                     </p>
 
                                     {/* <div className="progress-section">
@@ -101,7 +101,7 @@ const HomePage = () => {
                                     I am skilled in front-end technologies like ReactJS and NextJS, and proficient in back-end development using Django, Flask, and NodeJS. 
                                     I focus on crafting seamless user experiences and have expertise in database management with MongoDB and PostgreSQL.
 
-                                    I have a strong understanding of GIS concepts and software such as ArcGIS, QGIS, GDAL, Google Earth Engine and Geoserver. 
+                                    I have a strong understanding of GIS concepts and software such as ArcGIS, QGIS, GDAL, Grass GIS, Google Earth Engine and Geoserver. 
                                     I also have experience with mapping libraries like Leaflet JS, OpenLayers, Mapbox, and Esri ArcGIS JavaScript API. 
                                     I am adept at integrating GIS data into web applications and working with various GIS data formats.
 
