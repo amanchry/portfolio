@@ -2,7 +2,9 @@ import React, { useRef } from 'react';
 import ReviewsCarousel from '../components/ReviewsCarousel';
 
 import bgimg from '../public/images/background/bg4.jpeg';
-import about1 from '../public/images/aman.jpg';
+import Aman1 from '../public/images/aman1.jpg';
+import Aman2 from '../public/images/aman2.jpg';
+import Aman3 from '../public/images/aman.jpg';
 import bg1 from '../public/images/background/bg4.jpeg';
 import bg2 from '../public/images/background/bg4.jpeg';
 import { ProjectsDetailsData } from '../data/ProjectsDetailsData';
@@ -17,6 +19,7 @@ import database from "../public/images/skills/database.jpg"
 import mapping from "../public/images/skills/mapping.jpg"
 import geotech from "../public/images/skills/geotech.jpg"
 import othertech from "../public/images/skills/othertech.jpg"
+import ImgCarousel from '../components/ImgCarousel';
 
 
 const HomePage = () => {
@@ -109,9 +112,10 @@ const HomePage = () => {
 
                                     </p>
                                 </div>
-                                <div className="col-md-12 col-lg-6 d-flex ">
+                                <div className="col-md-12 col-lg-6">
                                     <div className="img-half-bx align-items-stretch">
-                                        <Image src={about1} alt="" />
+                                        {/* <Image src={Aman3} alt="" /> */}
+                                        <ImgCarousel Images={[Aman1,Aman2]}/>
                                     </div>
                                 </div>
                             </div>

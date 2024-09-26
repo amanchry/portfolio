@@ -4587,7 +4587,7 @@ blockquote:before {
 /* Thumb */
 #sync2 .owl-item.active.current .item img {
     outline: 5px solid rgba(0, 0, 0, 0.2);
-    outline-offset: -9px;
+    /* outline-offset: -9px; */
 }
 
 /* owl-dots */

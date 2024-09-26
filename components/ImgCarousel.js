@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import React from 'react'
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function SampleNextArrow(props) {
 	const { onClick } = props;
@@ -23,15 +25,15 @@ function SamplePrevArrow(props) {
 
 const ImgCarousel = ({ Images }) => {
 	var settings = {
-		arrows: true,
+		// arrows: true,
 		slidesToShow: 1,
-		speed: 1500,
-		fade: true,
-		navSpeed: 1500,
+		speed: 2500,
+		// fade: true,
+		navSpeed: 2500,
 		infinite: true,
 		autoplay: true,
-		nextArrow: <SampleNextArrow />,
-		prevArrow: <SamplePrevArrow />,
+		// nextArrow: <SampleNextArrow />,
+		// prevArrow: <SamplePrevArrow />,
 		responsive: [
 			{
 				breakpoint: 1200,
@@ -55,7 +57,7 @@ const ImgCarousel = ({ Images }) => {
 	}
 
 	return (
-		<Slider className="owl-fade-one owl-loaded  owl-btn-center-lr owl-btn-1 black owl-drag" {...settings}>
+		<Slider {...settings}>
 			{Images.map((image, index) => (
 
 				<div className="item" key={index}>
