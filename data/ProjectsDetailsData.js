@@ -42,22 +42,81 @@ import india_flood_atlas_3 from '../public/images/projects/india_flood_atlas_3.j
 import india_flood_atlas_4 from '../public/images/projects/india_flood_atlas_4.jpg';
 import jalkruti_1 from '../public/images/projects/jalkruti_1.jpg';
 import jalkruti_2 from '../public/images/projects/jalkruti_2.jpg';
-
+import apexstrive_1 from '../public/images/projects/apexstrive_1.jpg';
+import apexstrive_2 from '../public/images/projects/apexstrive_2.jpg';
+import apexstrive_3 from '../public/images/projects/apexstrive_3.jpg';
+import india_hydrolook_1 from '../public/images/projects/india_hydrolook_1.jpg';
+import india_hydrolook_2 from '../public/images/projects/india_hydrolook_2.jpg';
+import hydrodash1 from '../public/images/projects/hydrodash1.jpg';
+import hydrodash2 from '../public/images/projects/hydrodash2.jpg';
+import hydrodash3 from '../public/images/projects/hydrodash3.jpg';
+import hydrodash4 from '../public/images/projects/hydrodash4.jpg';
+import hydrodash5 from '../public/images/projects/hydrodash5.jpg';
+import hydrodash6 from '../public/images/projects/hydrodash6.jpg';
+import ceew_crai1 from '../public/images/projects/ceew_crai1.jpg';
+import ceew_crai2 from '../public/images/projects/ceew_crai2.jpg';
+import ceew_crai3 from '../public/images/projects/ceew_crai3.jpg';
+import ceew_crai4 from '../public/images/projects/ceew_crai4.jpg';
 
 
 export const ProjectsDetailsData =[
 
-    // {
-    //     ProjectName:"Jalkruti Water Solutions Pvt Ltd Website",
-    //     TagLine:"",
-    //     Description:"The flood atlas of India is based on the gridded simulations of flood dynamics. The atlas provides a glimpse of past annual maximum flooded area during 1901-2020.",
-    //     Tags:['Web Development','Next JS'],
-    //     Image:jalkruti_1,
-    //     CarouselImages:[jalkruti_1,jalkruti_2],
-    //     Link:"https://www.jalkruti.com/",
-    //     Technology:['Next JS']
+    {
+        ProjectName:"Hydrodash",
+        TagLine:"",
+        Description:"A GIS dashboard that manages drone survey data. The admin can upload customized geospatial data tailored to user specifications, including Water Level, Water Depth, Contours, Site Boundaries, and Drone Images like Ortho, DSM, DTM, etc. On the user side, the  dashboard allows visualization of this dataset on dynamic and interactive maps. Users gain valuable insights into their land, facilitating informed decision-making in various sectors.",
+        Tags:['Geoserver','Django'],
+        Image:hydrodash3,
+        CarouselImages:[hydrodash1,hydrodash2,hydrodash3,hydrodash4,hydrodash5,hydrodash6],
+        Link:"https://thehfl.com/",
+        Technology:['Django','Geoserver','Leaflet JS']
 
-    // },
+    },
+    {
+        ProjectName:"Climate resilience atlas for India",
+        TagLine:"",
+        Description:"Platform to enable climate risk-informed decision making and identify resilience strategies across sectors.",
+        Tags:['WebGIS Development','Next JS'],
+        Image:ceew_crai1,
+        CarouselImages:[ceew_crai1,ceew_crai2,ceew_crai3,ceew_crai4],
+        Link:"",
+        Technology:['Next JS','Leaflet JS']
+
+    },
+
+    {
+        ProjectName:"Hydrologic Outlook of India",
+        TagLine:"",
+        Description:"Hydrologic Outlook of India",
+        Tags:['WebGIS Development','React JS'],
+        Image:india_hydrolook_1,
+        CarouselImages:[india_hydrolook_1,india_hydrolook_2],
+        Link:"https://indiahydrolook.in/",
+        Technology:['React JS', 'Leaflet JS']
+
+    },
+    {
+        ProjectName:"ApexStrive Global Accounting LLP Website",
+        TagLine:"",
+        Description:"ApexStrive Global LLP specializes in personalized accounting, auditing, and taxation services. We empower businesses and individuals with financial clarity and integrity through tailored solutions that drive success.",
+        Tags:['Web Development','Next JS'],
+        Image:apexstrive_1,
+        CarouselImages:[apexstrive_1,apexstrive_2,apexstrive_3],
+        Link:"https://www.apexstriveglobal.com/",
+        Technology:['Next JS']
+
+    },
+    {
+        ProjectName:"Jalkruti Water Solutions Pvt Ltd Website",
+        TagLine:"",
+        Description:"JALKRUTI provides services in dam engineering, barrage engineering, river hydrology, river hydraulics etc.",
+        Tags:['Web Development','Next JS'],
+        Image:jalkruti_1,
+        CarouselImages:[jalkruti_1,jalkruti_2],
+        Link:"https://www.jalkruti.com/",
+        Technology:['Next JS']
+
+    },
     {
         ProjectName:"India Flood Atlas",
         TagLine:"The flood atlas of India is based on the gridded simulations of flood dynamics. The atlas provides a glimpse of past annual maximum flooded area during 1901-2020.",

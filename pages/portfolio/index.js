@@ -64,11 +64,13 @@ function PortfolioItem() {
 					<div className="site-filters clearfix center  m-b40">
 						<ul className="filters" data-toggle="buttons">
 							<TagLi name="Show All" handlesettag={setTag} tagActive={tag === 'Show All' ? true : false} />
-							<TagLi name="Web Development" handlesettag={setTag} tagActive={tag === 'Web Development' ? true : false} />
-							<TagLi name="WebGIS Development" handlesettag={setTag} tagActive={tag === 'WebGIS Development' ? true : false} />
+							{/* <TagLi name="Web Development" handlesettag={setTag} tagActive={tag === 'Web Development' ? true : false} /> */}
+							{/* <TagLi name="WebGIS Development" handlesettag={setTag} tagActive={tag === 'WebGIS Development' ? true : false} /> */}
 							<TagLi name="React JS" handlesettag={setTag} tagActive={tag === 'React JS' ? true : false} />
 							<TagLi name="Next JS" handlesettag={setTag} tagActive={tag === 'Next JS' ? true : false} />
 							<TagLi name="Flask" handlesettag={setTag} tagActive={tag === 'Flask' ? true : false} />
+							<TagLi name="Django" handlesettag={setTag} tagActive={tag === 'Django' ? true : false} />
+							<TagLi name="Geoserver" handlesettag={setTag} tagActive={tag === 'Geoserver' ? true : false} />
 
 						</ul>
 					</div>

@@ -102,10 +102,10 @@ const HomePage = () => {
                                     <p style={{ fontSize: "18px", textAlign: "justify" }}>
                                     I specialize in Full Stack WebGIS Development, creating interactive and visually appealing web-based GIS applications. 
                                     I am skilled in front-end technologies like ReactJS and NextJS, and proficient in back-end development using Django, Flask, and NodeJS. 
-                                    I focus on crafting seamless user experiences and have expertise in database management with MongoDB and PostgreSQL.
+                                    I focus on crafting seamless user experiences and have expertise in database management with MongoDB and PostgreSQL / PostGIS.
 
                                     I have a strong understanding of GIS concepts and software such as ArcGIS, QGIS, GDAL, Grass GIS, Google Earth Engine and Geoserver. 
-                                    I also have experience with mapping libraries like Leaflet JS, OpenLayers, Mapbox, and Esri ArcGIS JavaScript API. 
+                                    I also have experience with mapping libraries like Leaflet JS, OpenLayers, Mapbox, MapLibre, TerriaJS, and Esri ArcGIS JavaScript API. 
                                     I am adept at integrating GIS data into web applications and working with various GIS data formats.
 
 

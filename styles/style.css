@@ -136,6 +136,15 @@ a {
     outline: 0 none;
     text-decoration: none;
 }
+code{
+    background-color: #eaeaea;
+    padding: 0px 5px;
+    border-radius: 3px;
+  font-family: courier, monospace;
+display: block;
+border: 0.3px solid rgb(156, 156, 156);
+margin-bottom: 12px;
+}
 a:hover,
 a:focus {
     text-decoration: none;
