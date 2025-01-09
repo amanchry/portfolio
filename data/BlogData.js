@@ -17,7 +17,6 @@ export const BlogData = [
         "PublishDate": "Nov 30, 2024",
         "Page":"gdal",
         "ShortDescription": "If you’ve ever worked with geospatial data or are stepping into the world of GIS, you’ll come across GDAL (Geospatial Data Abstraction Library) sooner or later. GDAL is a powerful, open-source tool that supports a multitude of raster and vector data formats. This guide will help beginners navigate GDAL's essentials, from installation to performing basic geospatial operations.",
-
     },
     // {
     //     "BlogTitle": "WebGIS Development: A Beginner’s Guide",

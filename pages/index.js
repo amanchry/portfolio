@@ -40,11 +40,11 @@ const HomePage = () => {
                         <div className="home-bnr-content">
                             <h4 className="sub-title">Hi, I&apos;m</h4>
                             <h2 className="dz-title">Aman Chaudhary</h2>
-                            <h4 className="sub-title">a Full Stack WebGIS Developer</h4>
+                            <h4 className="sub-title">WebGIS Software Development, GIS, Remote Sensing, GeoAI</h4>
                             <div className="home-bnr-btns">
                                 <Link
                                     href="#"
-                                    className="site-button white btn-icon"
+                                    className="site-button white btn-icon mt-4"
                                     onClick={(e) => {
                                         e.preventDefault();
                                         aboutProgressRef.current.scrollIntoView({
@@ -72,7 +72,9 @@ const HomePage = () => {
                                     </h2>
 
                                     <p style={{ fontSize: "18px" }}>
-                                    I graduated from IIT Gandhinagar, India, with a major in Civil Engineering and a minor in Computer Science and Engineering.
+                                    I specialize in Full Stack WebGIS Development, building interactive and visually appealing web-based GIS applications.
+                                     My expertise includes frontend and backend development, spatial analytics, remote sensing, and open-source software development.
+                                    
                                     </p>
 
                                     {/* <div className="progress-section">
@@ -100,14 +102,11 @@ const HomePage = () => {
                                         </div> */}
                                     {/* <h3 className="m-b10">The Project</h3> */}
                                     <p style={{ fontSize: "18px", textAlign: "justify" }}>
-                                    I specialize in Full Stack WebGIS Development, creating interactive and visually appealing web-based GIS applications. 
-                                    I am skilled in front-end technologies like ReactJS and NextJS, and proficient in back-end development using Django, Flask, and NodeJS. 
-                                    I focus on crafting seamless user experiences and have expertise in database management with MongoDB and PostgreSQL / PostGIS.
-
-                                    I have a strong understanding of GIS concepts and software such as ArcGIS, QGIS, GDAL, Grass GIS, Google Earth Engine and Geoserver. 
-                                    I also have experience with mapping libraries like Leaflet JS, OpenLayers, Mapbox, MapLibre, TerriaJS, and Esri ArcGIS JavaScript API. 
-                                    I am adept at integrating GIS data into web applications and working with various GIS data formats.
-
+       
+                                    I graduated from IIT Gandhinagar, India, with a major in Civil Engineering and a minor in Computer Science and Engineering.
+                                     
+                                    
+                                    Currently working as a consultant in the World Bank&apos;s Hydroinformatics team. Developing WebGIS digital solutions under the Water Accounting Workstream within the Water Global Practice, supporting projects on water accounting, agro-climatic analytics, and irrigation performance monitoring.
 
 
                                     </p>

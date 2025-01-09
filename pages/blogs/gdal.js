@@ -66,7 +66,7 @@ const BlogDetails = () => {
 
                                         <h6>Essential GDAL Commands</h6>
                                         <ul>
-                                        <li>
+                                            <li>
                                                 <strong>Extract Metadata:</strong> View raster information:
                                                 <code>gdalinfo input.tif</code>
                                             </li>
@@ -83,8 +83,8 @@ const BlogDetails = () => {
                                                 <strong>Convert Raster Formats:</strong> Convert a TIFF to PNG:
                                                 <code>gdal_translate input.tif output.png</code>
                                             </li>
-                                           
-                                           
+
+
                                             <li>
                                                 <strong>Clip Raster:</strong> Crop raster using bounding box:
                                                 <code>gdal_translate -projwin ulx uly lrx lry input.tif output.tif</code>
@@ -109,7 +109,7 @@ const BlogDetails = () => {
                                                 <strong>Polygonize Raster:</strong> Convert raster data to vector polygons:
                                                 <code>gdal_polygonize.py input.tif -f &quot;ESRI Shapefile&quot; output.shp</code>
                                             </li>
-                                            
+
                                             <li>
                                                 <strong>Generate Overviews:</strong> Create pyramid layers for faster display:
                                                 <code>gdaladdo -r average input.tif 2 4 8 16</code>
@@ -142,42 +142,41 @@ const BlogDetails = () => {
                                         <pre>
                                             <code>
                                                 {`from osgeo import gdal
+                                                    # Open a raster file
+                                                    raster = gdal.Open("input.tif")
 
-# Open a raster file
-raster = gdal.Open("input.tif")
+                                                    # Get raster metadata
+                                                    print("Raster Size:", raster.RasterXSize, "x", raster.RasterYSize)
+                                                    print("Projection:", raster.GetProjection())
 
-# Get raster metadata
-print("Raster Size:", raster.RasterXSize, "x", raster.RasterYSize)
-print("Projection:", raster.GetProjection())
-
-# Close the file
-raster = None
-`}
+                                                    # Close the file
+                                                    raster = None
+                                                    `}
                                             </code>
 
                                         </pre>
 
                                         <h6>Resources</h6>
                                         <ul>
-                                        <li><Link href="https://courses.spatialthoughts.com/gdal-tools.html">Mastering GDAL Tools (Full Course)</Link></li>
+                                            <li><Link href="https://courses.spatialthoughts.com/gdal-tools.html">Mastering GDAL Tools (Full Course)</Link></li>
                                             <li>Refer to the <Link href="https://gdal.org/">GDAL Documentation</Link> for detailed guidance.</li>
                                             <li>A Gentle Introduction to GDAL by Robert Simmon <a
-href="https://medium.com/planet-stories/a-gentle-introduction-to-gdal-part-1-a3253eb96082">Part-1</a>,
-<a
-href="https://medium.com/@robsimmon/a-gentle-introduction-to-gdal-part-2-map-projections-gdalwarp-e05173bd710a">Part-2</a>,
-<a
-href="https://medium.com/planet-stories/a-gentle-introduction-to-gdal-part-3-geodesy-local-map-projections-794c6ff675ca">Part-3</a>,
-<a
-href="https://medium.com/planet-stories/a-gentle-introduction-to-gdal-part-4-working-with-satellite-data-d3835b5e2971">Part-4</a>,
-<a
-href="https://medium.com/@robsimmon/a-gentle-introduction-to-gdal-part-5-shaded-relief-ec29601db654">Part-5</a>,
-<a
-href="https://medium.com/@robsimmon/a-gentle-introduction-to-gdal-part-6-1-visualizing-data-8e6e7d6ef641">Part-6</a>,
-<a
-href="https://medium.com/@robsimmon/a-gentle-introduction-to-gdal-part-7-transforming-data-178df8640dd2">Part-7</a></li>
+                                                href="https://medium.com/planet-stories/a-gentle-introduction-to-gdal-part-1-a3253eb96082">Part-1</a>,
+                                                <a
+                                                    href="https://medium.com/@robsimmon/a-gentle-introduction-to-gdal-part-2-map-projections-gdalwarp-e05173bd710a">Part-2</a>,
+                                                <a
+                                                    href="https://medium.com/planet-stories/a-gentle-introduction-to-gdal-part-3-geodesy-local-map-projections-794c6ff675ca">Part-3</a>,
+                                                <a
+                                                    href="https://medium.com/planet-stories/a-gentle-introduction-to-gdal-part-4-working-with-satellite-data-d3835b5e2971">Part-4</a>,
+                                                <a
+                                                    href="https://medium.com/@robsimmon/a-gentle-introduction-to-gdal-part-5-shaded-relief-ec29601db654">Part-5</a>,
+                                                <a
+                                                    href="https://medium.com/@robsimmon/a-gentle-introduction-to-gdal-part-6-1-visualizing-data-8e6e7d6ef641">Part-6</a>,
+                                                <a
+                                                    href="https://medium.com/@robsimmon/a-gentle-introduction-to-gdal-part-7-transforming-data-178df8640dd2">Part-7</a></li>
                                         </ul>
 
-                                        
+
                                     </div>
                                     <div className="dlab-post-tags clear">
                                         <div className="post-tags">

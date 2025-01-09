@@ -57,6 +57,13 @@ import ceew_crai1 from '../public/images/projects/ceew_crai1.jpg';
 import ceew_crai2 from '../public/images/projects/ceew_crai2.jpg';
 import ceew_crai3 from '../public/images/projects/ceew_crai3.jpg';
 import ceew_crai4 from '../public/images/projects/ceew_crai4.jpg';
+import agridash1 from '../public/images/projects/agridash1.jpg';
+import agridash2 from '../public/images/projects/agridash2.jpg';
+import agridash3 from '../public/images/projects/agridash3.jpg';
+import agridash4 from '../public/images/projects/agridash4.jpg';
+import agridash5 from '../public/images/projects/agridash5.jpg';
+import agridash6 from '../public/images/projects/agridash6.jpg';
+import agridash7 from '../public/images/projects/agridash7.jpg';
 
 
 export const ProjectsDetailsData =[
@@ -72,6 +79,18 @@ export const ProjectsDetailsData =[
         Technology:['Django','Geoserver','Leaflet JS']
 
     },
+    {
+        ProjectName:"AgriFarm Dashboard",
+        TagLine:"",
+        Description:"A GIS dashboard that monitors farms remotely in near real-time, providing insights into crop growth, soil moisture, and crop health conditions. It also offers geography-season-crop specific weekly advisory in regional languages, helping farmers optimize the use of farm resources and increase crop yield.",
+        Tags:['React JS'],
+        Image:agridash1,
+        CarouselImages:[agridash1,agridash2,agridash3,agridash4,agridash5,agridash6,agridash7],
+        Link:"https://agrocastanalytics.com/agri-dash/",
+        Technology:['React JS','Leaflet JS',"PHP"]
+
+    },
+
     {
         ProjectName:"Climate resilience atlas for India",
         TagLine:"",
@@ -254,17 +273,17 @@ export const ProjectsDetailsData =[
 
     },
 
-    {
-        ProjectName:"Hallabol",
-        TagLine:"The intra-institute annual sports festival of IITGN.",
-        Description:"",
-        Tags:['Web Development',"React JS",],
-        Image:hallabol,
-        CarouselImages:[hallabol],
-        Link:"https://aman1chaudhary.github.io/hallabol-23/",
-        Technology:["React JS"]
+    // {
+    //     ProjectName:"Hallabol",
+    //     TagLine:"The intra-institute annual sports festival of IITGN.",
+    //     Description:"",
+    //     Tags:['Web Development',"React JS",],
+    //     Image:hallabol,
+    //     CarouselImages:[hallabol],
+    //     Link:"https://aman1chaudhary.github.io/hallabol-23/",
+    //     Technology:["React JS"]
 
-    },
+    // },
     {
         ProjectName:"WCL IITGN",
         TagLine:"Water & Climate Lab, IIT Gandhinagar.",
@@ -276,17 +295,17 @@ export const ProjectsDetailsData =[
         Technology:["React JS"]
 
     },
-    {
-        ProjectName:"PDC, IIT Gandhinagar",
-        TagLine:"Professional Development Council, IIT Gandhinagar",
-        Description:"IIT Gandhinagar",
-        Tags:['Web Development', 'Next JS'],
-        Image:pdc_iitgn,
-        CarouselImages:[pdc_iitgn],
-        Link:"https://pdc-nextjs.vercel.app/",
-        Technology:["React JS"]
+    // {
+    //     ProjectName:"PDC, IIT Gandhinagar",
+    //     TagLine:"Professional Development Council, IIT Gandhinagar",
+    //     Description:"IIT Gandhinagar",
+    //     Tags:['Web Development', 'Next JS'],
+    //     Image:pdc_iitgn,
+    //     CarouselImages:[pdc_iitgn],
+    //     Link:"https://pdc-nextjs.vercel.app/",
+    //     Technology:["React JS"]
 
-    },
+    // },
     {
         ProjectName:"LULC Analysis Using Google Earth Engine",
         TagLine:"The percent fraction cover for various LULC classes and its dynamic nature from 2015-2019.",
@@ -322,29 +341,31 @@ export const ProjectsDetailsData =[
     //     Technology:["React JS"]
 
     // },
-    {
-        ProjectName:"Food Waste Management Portal",
-        TagLine:"Food Waste Management Portal, IIT Gandhinagar Mess",
-        Description:"Footprint matrix to analyse the food wastage in college mess by calculating water, carbon, energy and labour footprint of wasted food.",
-        Tags:['Web Development', "HTML", "CSS", "Javascript"],
-        Image:food_waste_management,
-        CarouselImages:[food_waste_management],
-        Link:"https://aman1chaudhary.github.io/foodwaste-management/",
-        Technology:["HTML","CSS","Java Script"]
 
-    },
+    // {
+    //     ProjectName:"Food Waste Management Portal",
+    //     TagLine:"Food Waste Management Portal, IIT Gandhinagar Mess",
+    //     Description:"Footprint matrix to analyse the food wastage in college mess by calculating water, carbon, energy and labour footprint of wasted food.",
+    //     Tags:['Web Development', "HTML", "CSS", "Javascript"],
+    //     Image:food_waste_management,
+    //     CarouselImages:[food_waste_management],
+    //     Link:"https://aman1chaudhary.github.io/foodwaste-management/",
+    //     Technology:["HTML","CSS","Java Script"]
 
-    {
-        ProjectName:"SynOCE",
-        TagLine:"Official website of Civil Engineering Society, IIT Gandhinagar",
-        Description:"Official website of Civil Engineering Society, IIT Gandhinagar",
-        Tags:['Web Development', "React JS",],
-        Image:synoce,
-        CarouselImages:[synoce],
-        Link:"https://aman1chaudhary.github.io/synoce-iitgn/",
-        Technology:["React JS"]
+    // },
 
-    },
+    // {
+    //     ProjectName:"SynOCE",
+    //     TagLine:"Official website of Civil Engineering Society, IIT Gandhinagar",
+    //     Description:"Official website of Civil Engineering Society, IIT Gandhinagar",
+    //     Tags:['Web Development', "React JS",],
+    //     Image:synoce,
+    //     CarouselImages:[synoce],
+    //     Link:"https://aman1chaudhary.github.io/synoce-iitgn/",
+    //     Technology:["React JS"]
+
+    // },
+
     // {
     //     ProjectName:"Google Clone",
     //     TagLine:"Google Clone",
