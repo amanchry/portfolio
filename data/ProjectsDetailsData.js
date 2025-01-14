@@ -64,6 +64,11 @@ import agridash4 from '../public/images/projects/agridash4.jpg';
 import agridash5 from '../public/images/projects/agridash5.jpg';
 import agridash6 from '../public/images/projects/agridash6.jpg';
 import agridash7 from '../public/images/projects/agridash7.jpg';
+import climateadapt_1 from '../public/images/projects/climateadapt_1.jpg';
+import climateadapt_2 from '../public/images/projects/climateadapt_2.jpg';
+import climateadapt_3 from '../public/images/projects/climateadapt_3.jpg';
+import climateadapt_4 from '../public/images/projects/climateadapt_4.jpg';
+import climateadapt_5 from '../public/images/projects/climateadapt_5.jpg';
 
 
 export const ProjectsDetailsData =[
@@ -112,6 +117,17 @@ export const ProjectsDetailsData =[
         CarouselImages:[india_hydrolook_1,india_hydrolook_2],
         Link:"https://indiahydrolook.in/",
         Technology:['React JS', 'Leaflet JS']
+
+    },
+    {
+        ProjectName:"ClimateAdapt Dashboard",
+        TagLine:"",
+        Description:"Real-Time Hydro-Meteorological Monitoring and Forecast",
+        Tags:['WebGIS Development','React JS'],
+        Image:climateadapt_1,
+        CarouselImages:[climateadapt_1,climateadapt_2,climateadapt_3,climateadapt_4,climateadapt_5],
+        Link:"https://climateadapt.in/",
+        Technology:['React JS', 'Leaflet JS', "Weather APIs"]
 
     },
     {
