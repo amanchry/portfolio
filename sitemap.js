@@ -2,31 +2,31 @@ const fs = require('fs');
 
 const sitemapEntries = [
   {
-    url: 'https://chaudharyaman.com',
+    url: 'https://amanchaudhary.com',
     lastModified: new Date().toISOString(),
     changeFrequency: 'yearly',
     priority: 1.0,
   },
   {
-    url: 'https://chaudharyaman.com/resume',
+    url: 'https://amanchaudhary.com/resume',
     lastModified: new Date().toISOString(),
     changeFrequency: 'monthly',
     priority: 0.8,
   },
   {
-    url: 'https://chaudharyaman.com/portfolio',
+    url: 'https://amanchaudhary.com/portfolio',
     lastModified: new Date().toISOString(),
     changeFrequency: 'weekly',
     priority: 0.9,
   },
   {
-    url: 'https://chaudharyaman.com/contact',
+    url: 'https://amanchaudhary.com/contact',
     lastModified: new Date().toISOString(),
     changeFrequency: 'monthly',
     priority: 0.7,
   },
   {
-    url: 'https://chaudharyaman.com/blogs',
+    url: 'https://amanchaudhary.com/blogs',
     lastModified: new Date().toISOString(),
     changeFrequency: 'monthly',
     priority: 0.6,

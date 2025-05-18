@@ -1,7 +1,7 @@
 {
   "name": "portfolio-nextjs",
   "version": "0.1.0",
-  "homepage": "https://chaudharyaman.com/",
+  "homepage": "https://amanchaudhary.com/",
   "private": true,
   "scripts": {
     "dev": "next dev",
