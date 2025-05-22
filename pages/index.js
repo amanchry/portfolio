@@ -72,8 +72,12 @@ const HomePage = () => {
                                     </h2>
 
                                     <p style={{ fontSize: "18px" }}>
-                                    I specialize in Full Stack WebGIS Development, building interactive and visually appealing web-based GIS applications.
-                                     My expertise includes frontend and backend development, spatial analytics, remote sensing, and open-source software development.
+                                        I’m a Geospatial Technologies Specialist with a passion for developing intelligent, interactive platforms that transform complex spatial data into actionable insights.
+<br/><br/>
+With deep expertise in WebGIS, remote sensing, spatial analytics, and Earth observation, I build digital tools that enable decision-making, monitoring, and planning across diverse domains — including water resources, agriculture, food systems, climate, urban development, disaster risk, and sustainability.
+<br/><br/>
+From visualizing satellite data to deploying full-stack spatial platforms, I focus on scalable, open-source solutions tailored to real-world impact.
+
                                     
                                     </p>
 
@@ -101,7 +105,7 @@ const HomePage = () => {
                                             </div>
                                         </div> */}
                                     {/* <h3 className="m-b10">The Project</h3> */}
-                                    <p style={{ fontSize: "18px", textAlign: "justify" }}>
+                                    {/* <p style={{ fontSize: "18px", textAlign: "justify" }}>
        
                                     I graduated from IIT Gandhinagar, India, with a major in Civil Engineering and a minor in Computer Science and Engineering.
                                      
@@ -109,7 +113,7 @@ const HomePage = () => {
                                     Currently working as a consultant in the World Bank&apos;s Hydroinformatics team. Developing WebGIS digital solutions under the Water Accounting Workstream within the Water Global Practice, supporting projects on water accounting, agro-climatic analytics, and irrigation performance monitoring.
 
 
-                                    </p>
+                                    </p> */}
                                 </div>
                                 <div className="col-md-12 col-lg-6">
                                     <div className="img-half-bx align-items-stretch">
