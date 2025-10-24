@@ -1,6 +1,7 @@
 import React, { Component, useState, useEffect, Fragment } from 'react';
 import PageTitle from '../../components/PageTitle';
 import bannerIMG from '../../public/images/background/banner_1.png';
+
 import { ProjectsDetailsData } from '../../data/ProjectsDetailsData';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -56,6 +57,7 @@ function PortfolioItem() {
 				<div className="container-fluid">
 					<div className="section-head text-black text-center">
 						<h4 className="text-gray-dark font-weight-300 m-b10"> Some of the Projects I’ve Worked On</h4>
+						<a href='/Portfolio.pdf'>Portfolio PDF</a>
 						{/* <h2 className="box-title m-tb0">Web Development Portfolio<span className="bg-primary"></span></h2> */}
 						{/* <p>
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
