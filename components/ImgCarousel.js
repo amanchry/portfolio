@@ -61,7 +61,8 @@ const ImgCarousel = ({ Images }) => {
 			{Images.map((image, index) => (
 
 				<div className="item" key={index}>
-					<Image src={image} alt="" />
+					<Image src={image.Image} alt="" />
+					<p className='p-2 '>{image.Description} </p>
 				</div>
 
 

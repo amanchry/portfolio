@@ -55,7 +55,7 @@ function PortfolioItem() {
 			<div className="section-full content-inner portfolio-section mfp-gallery">
 				<div className="container-fluid">
 					<div className="section-head text-black text-center">
-						<h4 className="text-gray-dark font-weight-300 m-b10">Just some of the projects I worked on.</h4>
+						<h4 className="text-gray-dark font-weight-300 m-b10"> Some of the Projects I’ve Worked On</h4>
 						{/* <h2 className="box-title m-tb0">Web Development Portfolio<span className="bg-primary"></span></h2> */}
 						{/* <p>
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -63,14 +63,14 @@ function PortfolioItem() {
 					</div>
 					<div className="site-filters clearfix center  m-b40">
 						<ul className="filters" data-toggle="buttons">
-							<TagLi name="Show All" handlesettag={setTag} tagActive={tag === 'Show All' ? true : false} />
+							{/* <TagLi name="Show All" handlesettag={setTag} tagActive={tag === 'Show All' ? true : false} /> */}
 							{/* <TagLi name="Web Development" handlesettag={setTag} tagActive={tag === 'Web Development' ? true : false} /> */}
 							{/* <TagLi name="WebGIS Development" handlesettag={setTag} tagActive={tag === 'WebGIS Development' ? true : false} /> */}
-							<TagLi name="React JS" handlesettag={setTag} tagActive={tag === 'React JS' ? true : false} />
-							<TagLi name="Next JS" handlesettag={setTag} tagActive={tag === 'Next JS' ? true : false} />
-							<TagLi name="Flask" handlesettag={setTag} tagActive={tag === 'Flask' ? true : false} />
-							<TagLi name="Django" handlesettag={setTag} tagActive={tag === 'Django' ? true : false} />
-							<TagLi name="Geoserver" handlesettag={setTag} tagActive={tag === 'Geoserver' ? true : false} />
+							{/* <TagLi name="React JS" handlesettag={setTag} tagActive={tag === 'React JS' ? true : false} /> */}
+							{/* <TagLi name="Next JS" handlesettag={setTag} tagActive={tag === 'Next JS' ? true : false} /> */}
+							{/* <TagLi name="Flask" handlesettag={setTag} tagActive={tag === 'Flask' ? true : false} /> */}
+							{/* <TagLi name="Django" handlesettag={setTag} tagActive={tag === 'Django' ? true : false} /> */}
+							{/* <TagLi name="Geoserver" handlesettag={setTag} tagActive={tag === 'Geoserver' ? true : false} /> */}
 
 						</ul>
 					</div>

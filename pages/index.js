@@ -22,6 +22,15 @@ import othertech from "../public/images/skills/othertech.jpg"
 import ImgCarousel from '../components/ImgCarousel';
 
 
+const carouselImages = [
+    { "Image": Aman1, "Description": "" },
+    { "Image": Aman2, "Description": "" },
+    // { "Image": Aman3, "Description": "Working on geospatial analytics" },
+]
+
+
+
+
 const HomePage = () => {
     const aboutProgressRef = useRef(null);
     return (
@@ -35,12 +44,13 @@ const HomePage = () => {
             </Head>
 
             <div className="page-content bg-white rubik">
-                <div className="home-banner" style={{ backgroundImage: "url(" + bgimg.src + ")" }}>
+                {/* <div className="home-banner" style={{ backgroundImage: "url(" + bgimg.src + ")" }}>
                     <div className="home-bnr-inner">
                         <div className="home-bnr-content">
                             <h4 className="sub-title">Hi, I&apos;m</h4>
                             <h2 className="dz-title">Aman Chaudhary</h2>
-                            <h4 className="sub-title">WebGIS Software Development, GIS, Remote Sensing, GeoAI</h4>
+                            <h4 className="sub-title">Open-Source WebGIS • Remote Sensing • GIS • GeoAI</h4>
+
                             <div className="home-bnr-btns">
                                 <Link
                                     href="#"
@@ -60,26 +70,36 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="content-block">
                     <div className="section-full content-inner about-progress" ref={aboutProgressRef}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-md-12 col-lg-6">
-                                    <h2 className="font-weight-400">Hi, I’m Aman <br />
-                                        {/* <p className="font-weight-300" style={{ fontSize: "20px" }}> Bachelor of Technology | IIT Gandhinagar</p></h2> */}
+                                    <h2 className="font-weight-400">Aman Chaudhary <br />
+                                        <p className="font-weight-300" style={{ fontSize: "18px" }}> Geospatial Technology | Remote Sensing | GeoAI <br/>
+                                      World Bank | University of Twente | IIT Gandhinagar
+                                       </p>
                                     </h2>
 
                                     <p style={{ fontSize: "18px" }}>
                                         I’m a Geospatial Technologies Specialist with a passion for developing intelligent, interactive platforms that transform complex spatial data into actionable insights.
-<br/><br/>
-With deep expertise in WebGIS, remote sensing, spatial analytics, and Earth observation, I build digital tools that enable decision-making, monitoring, and planning across diverse domains — including water resources, agriculture, food systems, climate, urban development, disaster risk, and sustainability.
-<br/><br/>
-From visualizing satellite data to deploying full-stack spatial platforms, I focus on scalable, open-source solutions tailored to real-world impact.
+                                        <br /><br />
+                                        With deep expertise in WebGIS, remote sensing, spatial analytics, and Earth observation, I build digital tools that enable decision-making, monitoring, and planning across diverse domains — including water resources, agriculture, food systems, climate, urban development, disaster risk, and sustainability.
+                                        <br /><br />
+                                        From visualizing satellite data to deploying full-stack spatial platforms, I focus on scalable, open-source solutions tailored to real-world impact.
 
-                                    
+
                                     </p>
+                                    <ul className="list-inline m-a0">
+                                        <li><a href="https://www.linkedin.com/in/amanchry/" target='_blank' rel="noreferrer" className="site-button  circle mr-1 facebook" style={{ fontSize: "24px" }}><i className="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://github.com/amanchry" target='_blank' rel="noreferrer" className="site-button  circle mr-1 facebook" style={{ fontSize: "24px" }}><i className="fa fa-github"></i></a></li>
+                                        <li><a href="https://www.instagram.com/a_man__chaudhary/" target='_blank' rel="noreferrer" className="site-button  circle mr-1 facebook" style={{ fontSize: "24px" }}><i className="fa fa-instagram"></i></a></li>
+                                        <li><a href="https://twitter.com/amanchry" target='_blank' rel="noreferrer" className="site-button  circle mr-1 facebook" style={{ fontSize: "24px" }}><i className="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://medium.com/@chaudharyaman" target='_blank' rel="noreferrer" className="site-button  circle mr-1 facebook" style={{ fontSize: "24px" }}><i className="fa fa-medium"></i></a></li>
+                                        <li><a href="mailto:amanchaudhary.web@gmail.com" className="site-button  circle mr-1 facebook"  style={{ fontSize: "24px" }}><i className="fa fa-envelope"></i></a></li>
+                                    </ul>
 
                                     {/* <div className="progress-section">
                                             <div className="progress-bx">
@@ -117,8 +137,8 @@ From visualizing satellite data to deploying full-stack spatial platforms, I foc
                                 </div>
                                 <div className="col-md-12 col-lg-6">
                                     <div className="img-half-bx align-items-stretch">
-                                        {/* <Image src={Aman3} alt="" /> */}
-                                        <ImgCarousel Images={[Aman1,Aman2]}/>
+                                        <Image src={Aman1} alt="" />
+                                        {/* <ImgCarousel Images={carouselImages} /> */}
                                     </div>
                                 </div>
                             </div>
@@ -126,15 +146,18 @@ From visualizing satellite data to deploying full-stack spatial platforms, I foc
                     </div>
 
 
-                    <div className="section-full content-inner-1 overlay-primary about-service bg-img-fix" style={{ backgroundImage: "url(" + bg2.src + ")" }}>
+
+
+                    <div className="section-full about-service bg-img-fix" >
+                    {/* <div className="section-full content-inner-1 overlay-primary about-service bg-img-fix" style={{ backgroundImage: "url(" + bg2.src + ")" }}> */}
                         <div className="container">
-                            <div className="section-head text-white text-center">
+                            <div className="section-head  text-center">
                                 <h2 className="box-title m-tb0 max-w800 m-auto">My Expertise<span className="bg-primary"></span></h2>
-                                {/* <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over</p> */}
+                                <p>I integrate open-source technologies with modern cloud architectures to build scalable, intelligent geospatial solutions.</p>
                             </div>
                         </div>
                         <div className="container">
-                            <div className="row text-white">
+                            <div className="row ">
 
                                 <div className="col-lg-4 col-md-6 col-sm-6 m-b30" >
                                     <div className="icon-bx-wraper bx-style-1 p-a30 center">

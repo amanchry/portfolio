@@ -174,17 +174,17 @@ export const ProjectsDetailsData =[
         Technology:['React JS', 'Leaflet JS']
 
     },
-    {
-        ProjectName:"Combat Sports Analytics Dashboard",
-        TagLine:"A dashboard that enables users to upload sports video footage, select specific segments of interest, and generate 3D interactive animations of the selected video segment.",
-        Description:"A dashboard that enables users to upload sports video footage, select specific segments of interest, and generate 3D interactive animations of the selected video segment. MotionBERT and AlphaPose ML models were used to estimate the 3D animation from 2D video. These 3D animations provide valuable insights to improve athletes performance, refine strategies, and enhance training routines.",
-        Tags:['Web Development', 'Full Stack Web Development',"React JS", "Flask"],
-        Image:Combat_Sports_Analytics_1,
-        CarouselImages:[Combat_Sports_Analytics_1, Combat_Sports_Analytics_2,Combat_Sports_Analytics_3],
-        Link:"https://ringmaster-analytics.onrender.com/",
-        Technology:['React JS', 'Flask','MongoDB','Machine Learning']
+    // {
+    //     ProjectName:"Combat Sports Analytics Dashboard",
+    //     TagLine:"A dashboard that enables users to upload sports video footage, select specific segments of interest, and generate 3D interactive animations of the selected video segment.",
+    //     Description:"A dashboard that enables users to upload sports video footage, select specific segments of interest, and generate 3D interactive animations of the selected video segment. MotionBERT and AlphaPose ML models were used to estimate the 3D animation from 2D video. These 3D animations provide valuable insights to improve athletes performance, refine strategies, and enhance training routines.",
+    //     Tags:['Web Development', 'Full Stack Web Development',"React JS", "Flask"],
+    //     Image:Combat_Sports_Analytics_1,
+    //     CarouselImages:[Combat_Sports_Analytics_1, Combat_Sports_Analytics_2,Combat_Sports_Analytics_3],
+    //     Link:"https://ringmaster-analytics.onrender.com/",
+    //     Technology:['React JS', 'Flask','MongoDB','Machine Learning']
 
-    },
+    // },
 
 
     {
