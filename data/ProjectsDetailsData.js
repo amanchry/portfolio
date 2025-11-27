@@ -69,11 +69,23 @@ import climateadapt_2 from '../public/images/projects/climateadapt_2.jpg';
 import climateadapt_3 from '../public/images/projects/climateadapt_3.jpg';
 import climateadapt_4 from '../public/images/projects/climateadapt_4.jpg';
 import climateadapt_5 from '../public/images/projects/climateadapt_5.jpg';
+import geocanvas from '../public/images/projects/geocanvas_1.jpg';
 
 
 export const ProjectsDetailsData =[
 
     {
+        ProjectName:"GeoCanvas",
+        TagLine:"",
+        Description:"GeoCanvas is a simple and powerful web-based GIS viewer that lets you upload, visualize, edit, and export spatial data instantly. No installation, no backend — everything runs on the client side.",
+        Tags:['OpenLayers'],
+        Image:geocanvas,
+        CarouselImages:[geocanvas,geocanvas,geocanvas],
+        Link:"https://geonexa.github.io/geocanvas/",
+        Technology:['OpenLayers']
+
+    },
+        {
         ProjectName:"Hydrodash",
         TagLine:"",
         Description:"A GIS dashboard that manages drone survey data. The admin can upload customized geospatial data tailored to user specifications, including Water Level, Water Depth, Contours, Site Boundaries, and Drone Images like Ortho, DSM, DTM, etc. On the user side, the  dashboard allows visualization of this dataset on dynamic and interactive maps. Users gain valuable insights into their land, facilitating informed decision-making in various sectors.",
@@ -84,6 +96,7 @@ export const ProjectsDetailsData =[
         Technology:['Django','Geoserver','Leaflet JS']
 
     },
+
     {
         ProjectName:"AgriFarm Dashboard",
         TagLine:"",
