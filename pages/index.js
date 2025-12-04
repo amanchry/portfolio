@@ -76,7 +76,7 @@ const HomePage = () => {
                     <div className="section-full content-inner about-progress" ref={aboutProgressRef}>
                         <div className="container">
                             <div className="row mt-3">
-                                <div className="col-md-12 col-lg-6">
+                                <div className="col-md-12 col-lg-6 order-2 order-lg-1">
                                     <h2 className="font-weight-300">Aman Chaudhary <br />
                                         <p className="font-weight-300" style={{ fontSize: "16px" }}> Geospatial Technology Developer | Remote Sensing | GeoAI <br />
                                             World Bank | University of Twente | IIT Gandhinagar
@@ -127,14 +127,6 @@ const HomePage = () => {
 
 
                                     </p> */}
-                                </div>
-                                <div className="col-md-12 col-lg-6">
-                                    <div className="img-half-bx align-items-stretch">
-                                        <Image src={Aman1} alt="" />
-                                        {/* <ImgCarousel Images={carouselImages} /> */}
-                                    </div>
-                                </div>
-                                <div className="col-md-12 col-lg-12">
                                     <ul className="list-inline m-a0">
                                         <li><a href="https://www.linkedin.com/in/amanchry/" target='_blank' rel="noreferrer" className="site-button  circle mr-1 facebook" style={{ fontSize: "24px" }}><i className="fa fa-linkedin"></i></a></li>
                                         <li><a href="https://github.com/amanchry" target='_blank' rel="noreferrer" className="site-button  circle mr-1 facebook" style={{ fontSize: "24px" }}><i className="fa fa-github"></i></a></li>
@@ -143,7 +135,15 @@ const HomePage = () => {
                                         <li><a href="https://medium.com/@chaudharyaman" target='_blank' rel="noreferrer" className="site-button  circle mr-1 facebook" style={{ fontSize: "24px" }}><i className="fa fa-medium"></i></a></li>
                                         <li><a href="mailto:amanchaudhary.web@gmail.com" className="site-button  circle mr-1 facebook" style={{ fontSize: "24px" }}><i className="fa fa-envelope"></i></a></li>
                                     </ul>
+                                    
                                 </div>
+                                <div className="col-md-12 col-lg-6 order-1 order-lg-2">
+                                    <div className="img-half-bx align-items-stretch">
+                                        <Image src={Aman1} alt="" />
+                                        {/* <ImgCarousel Images={carouselImages} /> */}
+                                    </div>
+                                </div>
+
 
 
                             </div>
