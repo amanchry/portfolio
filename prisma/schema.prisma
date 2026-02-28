@@ -1,0 +1,57 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  name         String
+  email        String   @unique
+  password     String
+  admin        Boolean  @default(false)
+  createdAt    DateTime @default(now())
+}
+
+model Project {
+  id             String    @id @default(auto()) @map("_id") @db.ObjectId
+  projectName    String    @unique
+  description    String
+  projectDate    DateTime? 
+  tags           String[]
+  image          String
+  carouselImages String[]
+  link           String?
+  technology     String[]
+  createdAt      DateTime  @default(now())
+}
+
+model Blog {
+  id               String   @id @default(auto()) @map("_id") @db.ObjectId
+  title            String
+  slug             String   @unique
+  shortDescription String
+  content          String   // Legacy HTML content (kept for backward compatibility)
+  contentMarkdown  String?  // Markdown source for modern blog authoring
+  contentFormat    String   @default("html") // "html" | "markdown"
+  isPublished      Boolean? @default(true)
+  thumbnail        String?
+  publishedAt      DateTime @default(now())
+  createdAt        DateTime @default(now())
+}
+
+model RecentPost {
+  id               String    @id @default(auto()) @map("_id") @db.ObjectId
+  title            String
+  slug             String    @unique
+  shortDescription String
+  thumbnail        String?
+  link             String?
+  postDate        DateTime? // Date to show on frontend (event/post date); if null, publishedAt is used
+  place            String?   // Location/venue (e.g. for events)
+  publishedAt      DateTime  @default(now())
+  createdAt        DateTime  @default(now())
+}

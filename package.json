@@ -1,30 +1,42 @@
 {
-  "name": "portfolio-nextjs",
+  "name": "aman-portfolio",
   "version": "0.1.0",
-  "homepage": "https://amanchaudhary.com/",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "sitemap": "node sitemap.js"
+    "lint": "eslint"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
   },
   "dependencies": {
-    "@fontsource-variable/raleway": "^5.0.9",
-    "axios": "^1.4.0",
-    "next": "13.4.16",
-    "nodemailer": "^6.9.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-icons": "^4.10.1",
-    "react-slick": "^0.29.0",
+    "@fontsource-variable/raleway": "^5.2.8",
+    "@prisma/client": "^6.19.2",
+    "@radix-ui/themes": "^3.3.0",
+    "@react-icons/all-files": "^4.1.0",
+    "axios": "^1.13.5",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.9.0",
+    "next": "16.1.6",
+    "next-auth": "^4.24.13",
+    "nodemailer": "^7.0.13",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-hook-form": "^7.71.1",
+    "react-icons": "^5.5.0",
+    "react-markdown": "^10.1.0",
+    "react-slick": "^0.31.0",
+    "remark-gfm": "^4.0.1",
+    "simple-react-lightbox": "^3.6.8",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
-    "@types/node": "20.14.11",
-    "@types/react": "18.3.3",
-    "eslint": "8.47.0",
-    "eslint-config-next": "13.4.16"
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "prisma": "^6.9.0",
+    "tailwindcss": "^4"
   }
 }

@@ -1,0 +1,239 @@
+[
+  {
+    "ProjectName": "GeoCanvas",
+    "Description": "A web-based GIS Data viewer that lets users upload, visualize, edit, and export spatial data instantly. No installation, no backend — everything runs on the client side.",
+    "Tags": ["OpenLayers"],
+    "Image": "projects/geocanvas_1.jpg",
+    "CarouselImages": ["projects/geocanvas_1.jpg", "projects/geocanvas_1.jpg", "projects/geocanvas_1.jpg"],
+    "Link": "https://geonexa.github.io/geocanvas/",
+    "ProjectDate": "2025-09-01",
+    "Technology": ["OpenLayers"]
+  },
+  {
+    "ProjectName": "Hydrodash",
+    "Description": "A GIS dashboard that manages drone survey data. The admin can upload customized geospatial data tailored to user specifications, including Water Level, Water Depth, Contours, Site Boundaries, and Drone Images like Ortho, DSM, DTM, etc. On the user side, the  dashboard allows visualization of this dataset on dynamic and interactive maps.",
+    "Tags": ["Geoserver", "Django"],
+    "Image": "projects/hydrodash3.jpg",
+    "CarouselImages": ["projects/hydrodash1.jpg", "projects/hydrodash2.jpg", "projects/hydrodash3.jpg", "projects/hydrodash4.jpg", "projects/hydrodash5.jpg", "projects/hydrodash6.jpg"],
+    "Link": "https://thehfl.com/",
+    "ProjectDate": "2025-05-01",
+    "Technology": ["Django", "Geoserver", "Leaflet JS"]
+  },
+      {
+        "ProjectName":"AgriFarm Dashboard",
+        "Description":"A GIS dashboard that monitors farms remotely in near real-time, providing insights into crop growth, soil moisture, and crop health conditions. It also offers geography-season-crop specific weekly advisory in regional languages, helping farmers optimize the use of farm resources and increase crop yield.",
+        "Tags":["React JS"],
+        "Image":"projects/agridash1.jpg",
+        "CarouselImages":["projects/agridash1.jpg","projects/agridash2.jpg","projects/agridash3.jpg","projects/agridash4.jpg","projects/agridash5.jpg","projects/agridash6.jpg","projects/agridash7.jpg"],
+        "Link":"https://agrocastanalytics.com/agri-dash/",
+        "ProjectDate":"2024-09-01",
+        "Technology":["React JS","Leaflet JS","PHP"]
+
+    },
+
+    {
+        "ProjectName":"Climate resilience atlas for India",
+        "Description":"Platform to enable climate risk-informed decision making and identify resilience strategies across sectors.",
+        "Tags":["WebGIS Development","Next JS"],
+        "Image":"projects/ceew_crai1.jpg",
+        "CarouselImages":["projects/ceew_crai1.jpg","projects/ceew_crai2.jpg","projects/ceew_crai3.jpg","projects/ceew_crai4.jpg"],
+        "Link":"",
+        "ProjectDate":"2024-05-01",
+        "Technology":["Next JS","Leaflet JS"]
+
+    },
+
+    {
+        "ProjectName":"Hydrologic Outlook of India",
+        "Description":"A GIS Dashboard provides water outlook for India, covering the current month, the past four months, and a one-month forecast. The outlook is generated using observational data and an extended-range forecasting system for meteorological variables, combined with advanced hydrological modeling tools.",
+        "Tags":["WebGIS Development","React JS"],
+        "Image":"projects/india_hydrolook_1.jpg",
+        "CarouselImages":["projects/india_hydrolook_1.jpg","projects/india_hydrolook_2.jpg"],
+        "Link":"https://indiahydrolook.in/",  
+        "ProjectDate":"2024-10-01",
+        "Technology":["React JS", "Leaflet JS"]
+
+    },
+    {
+        "ProjectName":"ClimateAdapt Dashboard",
+        "Description":"Real-Time Hydro-Meteorological Monitoring and Forecast",
+        "Tags":["WebGIS Development","React JS"],
+        "Image":"projects/climateadapt_1.jpg",
+        "CarouselImages":["projects/climateadapt_1.jpg","projects/climateadapt_2.jpg","projects/climateadapt_3.jpg","projects/climateadapt_4.jpg","projects/climateadapt_5.jpg"],
+        "Link":"https://climateadapt.in/",
+        "ProjectDate":"2024-10-01",
+        "Technology":["React JS", "Leaflet JS", "Weather APIs"]
+
+    },
+    {
+        "ProjectName":"ApexStrive Global Accounting LLP Website",
+        "Description":"ApexStrive Global LLP specializes in personalized accounting, auditing, and taxation services. We empower businesses and individuals with financial clarity and integrity through tailored solutions that drive success.",
+        "Tags":["Web Development","Next JS"],
+        "Image":"projects/apexstrive_1.jpg",
+        "CarouselImages":["projects/apexstrive_1.jpg","projects/apexstrive_2.jpg","projects/apexstrive_3.jpg"],
+        "Link":"https://www.apexstriveglobal.com/",
+        "ProjectDate":"2024-10-01",
+        "Technology":["Next JS"]
+
+    },
+    {
+        "ProjectName":"Jalkruti Water Solutions Pvt Ltd Website",
+        "Description":"Jalkruti provides services in dam engineering, barrage engineering, river hydrology, river hydraulics etc.",
+        "Tags":["Web Development","Next JS"],
+        "Image":"projects/jalkruti_1.jpg",
+        "CarouselImages":["projects/jalkruti_1.jpg","projects/jalkruti_2.jpg"],
+        "Link":"https://www.jalkruti.com/",
+        "ProjectDate":"2024-05-01",
+        "Technology":["Next JS"]
+
+    },
+    {
+        "ProjectName":"India Flood Atlas",
+        "Description":"The flood atlas of India is based on the gridded simulations of flood dynamics. The atlas provides a glimpse of past annual maximum flooded area during 1901-2020.",
+        "Tags":["WebGIS Development", "Full Stack Web Development","React JS", "Leaflet JS"],
+        "Image":"projects/india_flood_atlas_1.jpg",
+        "CarouselImages":["projects/india_flood_atlas_1.jpg","projects/india_flood_atlas_2.jpg","projects/india_flood_atlas_3.jpg","projects/india_flood_atlas_4.jpg"],
+        "Link":"https://indiafloodatlas.in/",
+        "ProjectDate":"2024-03-01",
+        "Technology":["React JS", "Leaflet JS"]
+
+    },
+    {
+        "ProjectName":"Drought Atlas of India",
+        "Description":"Drought atlas of India is based on the high-resolution Standardised Precipitation Evapotranspiration Index (SPEI). The atlas provide glimpse of past droughts in summer monsoon, winter monsoon, calender year, and water year during 1901-2020.",
+        "Tags":["WebGIS Development", "Full Stack Web Development","React JS", "Leaflet JS"],
+        "Image":"projects/drought_atlas_1.jpg",
+        "CarouselImages":["projects/drought_atlas_1.jpg","projects/drought_atlas_2.jpg","projects/drought_atlas_3.jpg"],
+        "Link":"https://indiadroughtatlas.in/",   
+        "ProjectDate":"2024-03-01",
+        "Technology":["React JS", "Leaflet JS"]
+
+    },
+
+
+    {
+        "ProjectName":"Flood Forecasting System Using Machine Learning",
+        "Description":"A machine learning-based flood forecasting system for the Narmada basin, Inspired by Google’s Flood Forecasting Initiative. Used Thresholding model to predict flood extents based on river gauge measurements. Trained and tested the model on 30 and 5 years of historical flood events data, respectively, showcasing an impressive accuracy of 86%. Effectively demonstrated the system’s capability in accurately predicting specific historical flood incidents.",
+        "Tags":["Web Development", "Full Stack Web Development","React JS", "Flask"],
+        "Image":"projects/flood_forecasting_1.jpg",
+        "CarouselImages":["projects/flood_forecasting_1.jpg","projects/flood_forecasting_2.jpg","projects/flood_forecasting_3.jpg"],
+        "Link":"https://flood-forecasting-dashboard.onrender.com/",
+        "ProjectDate":"2024-01-01",
+        "Technology":["React JS", "Flask", "Machine Learning"]
+
+    },
+
+    {
+        "ProjectName":"Persona 360 Dashboard",
+        "Description":"The tool enables users to create Meta campaigns with enhanced niche segmentation. By leveraging over 100+ filters, such as Income, demographic behavior, NCCS, and more, users gained valuable insights into their target audience.",
+        "Tags":["Web Development", "Full Stack Web Development","React JS", "Flask"],
+        "Image":"projects/kentrix_persona.jpg",
+        "CarouselImages":["projects/kentrix_persona.jpg","projects/kentrix_persona2.jpg"],
+        "Link":"",    
+        "ProjectDate":"2023-06-01",
+        "Technology":["React JS", "Flask"]
+
+    },
+    {
+        "ProjectName":"Kentrix Mahindra",
+        "Description":"A dashboard for generating cohort reports and feature importance analyses of sales data using machine learning models and geospatial analysis.",
+        "Tags":["Web Development","WebGIS Development", "Full Stack Web Development","React JS", "Flask"],
+        "Image":"projects/kentrix_mahindra.jpg",
+        "CarouselImages":["projects/kentrix_mahindra.jpg","projects/kentrix_mahindra2.jpg"],
+        "Link":"",
+        "ProjectDate":"2023-06-01",
+        "Technology":["React JS", "Flask","Machine Learning"]
+
+    },
+    {
+        "ProjectName":"Kentrix Karma",
+        "Description":"A software to fetch data for a specific address from Kentrix API. This enables users to fetch data for a single address or perform batch operations using CSV files.",
+        "Tags":["Web Development", "Software Development"],
+        "Image":"projects/kentrix_karma.jpg",
+        "CarouselImages":["projects/kentrix_karma.jpg"],
+        "Link":"",
+        "ProjectDate":"2023-06-01",
+        "Technology":["React JS", "Flask","Electron JS"]
+
+    },
+    {
+        "ProjectName":"AgroCast Analytics Website",
+        "Description":"A GIS Application offers geography-season-crop specific weekly advisory in regional languages, helping farmers optimize the use of farm resources and increase crop yield. ",
+        "Tags":["Web Development", "Frontend Development","Next JS"],
+        "Image":"projects/Agrocast_1.jpg",
+        "CarouselImages":["projects/Agrocast_1.jpg","projects/Agrocast_2.jpg"],
+        "Link":"https://agrocastanalytics.com/",
+        "ProjectDate":"2023-07-01",
+        "Technology":[ "Next JS"]
+
+    },
+    {
+        "ProjectName":"India Drought Monitor",
+        "Description":"A real-time drought monitoring and forecasting web application that provides valuable insights into drought conditions in India and updates on a weekly basis.",
+        "Tags":["Web Development", "WebGIS Development","React JS"],
+        "Image":"projects/india_drought_monitor_1.jpg",
+        "CarouselImages":["projects/india_drought_monitor_1.jpg"],
+        "Link":"https://indiadroughtmonitor.in/",
+        "ProjectDate":"2023-10-01",
+        "Technology":["React JS", "Leaflet JS"]
+
+    },
+    {
+        "ProjectName":"Geoportal of Indian Dams",
+        "Description":"A WebGIS application that contains database of over 5400 dams across India. Implemented features such as catchment characteristics, LULC analysis, and flood risk assessment, to provide valuable insights and data of Indian dams to the users.",
+        "Tags":["Web Development", "WebGIS Development","React JS"],
+        "Image":"projects/geoid_1.jpg",
+        "CarouselImages":["projects/geoid_1.jpg","projects/geoid_2.jpg","projects/geoid_3.jpg","projects/geoid_4.jpg","projects/geoid_5.jpg"],
+        "Link":"https://geoportalofindiandams.github.io/GeoID/",
+        "ProjectDate":"2022-06-01",
+        "Technology":["React JS", "Leaflet JS"]
+
+    },
+    
+    {
+        "ProjectName":"India Natural Hazards Geoportal",
+        "Description":"A WebGIS dashboard displaying India’s natural hazards data (drought, flood, earthquake, cyclone, epidemics, lightning, etc.) on interactive maps. Implemented map download functionality to enhance data accessibility for users. Designed and implemented an engaging dynamic quiz feature.",
+        "Tags":["Web Development", "WebGIS Development","React JS"],
+        "Image":"projects/India_Natural_Hazards_2.jpg",
+        "CarouselImages":["projects/India_Natural_Hazards_1.jpg","projects/India_Natural_Hazards_2.jpg"],
+        "Link":"https://geospatial-smart-thinkers.github.io/natural-hazards/",
+        "ProjectDate":"2023-06-01",
+        "Technology":["React JS", "Leaflet JS"]
+
+    },
+    {
+        "ProjectName":"Choropleth Map Generator",
+        "Description":"An open-source WebGIS Dashboard for designing and customizing choropleth maps.",
+        "Tags":["Web Development", "WebGIS Development","React JS"],
+        "Image":"projects/Choropleth_Map_Generator_2.jpg",
+        "CarouselImages":["projects/Choropleth_Map_Generator_1.jpg","projects/Choropleth_Map_Generator_2.jpg"],
+        "Link":"https://geospatial-smart-thinkers.github.io/choropleth-map/",
+        "ProjectDate":"2023-06-01",
+        "Technology":["React JS", "Leaflet JS"]
+
+    },
+
+    {
+        "ProjectName":"WCL IITGN",
+        "Description":"Official website of Water & Climate Lab, IIT Gandhinagar. The website features several tools, including a research database, current people and alumni database, and publication search function. The website played a crucial role in promoting the lab's research and increasing its visibility.",
+        "Tags":["Web Development","React JS"],
+        "Image":"projects/wcl_iitgn.jpg",
+        "CarouselImages":["projects/wcl_iitgn.jpg"],
+        "Link":"https://vmishra.people.iitgn.ac.in/water&climate/",
+        "ProjectDate":"2022-08-01",
+        "Technology":["React JS"]
+
+    },
+
+    {
+        "ProjectName":"LULC Analysis Using Google Earth Engine",
+        "Description":"The percent fraction cover for various LULC classes and its dynamic nature from 2015-2019.",
+        "Tags":["Web Development","WebGIS Development" ],
+        "Image":"projects/lulc_analysis.jpg",
+        "CarouselImages":["projects/lulc_analysis.jpg"],
+        "Link":"https://amanchaudhary.users.earthengine.app/view/geoid--lulc-analysis#lat=23.7;lon=78.5;zoom=5;",
+        "ProjectDate":"2022-06-01",
+        "Technology":["Google Earth Engine"]
+
+    }
+]
