@@ -45,7 +45,7 @@ const AboutPage = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-5 col-md-4 about-img">
-                                <img src="/images/Aman_WB.jpg" data-tilt alt="Aman Chaudhary" />
+                                <img src="/images/Aman_WB.png" data-tilt alt="Aman Chaudhary" />
                             </div>
 
                             <div className="col-lg-7 col-md-8">
