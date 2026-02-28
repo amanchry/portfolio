@@ -1,8 +1,9 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import Slider from "react-slick";
 import Link from 'next/link';
+
 
 function formatDate(d) {
     if (!d) return '';
@@ -15,6 +16,14 @@ function resolveHref(item) {
 
 function isExternal(url) {
     return /^https?:\/\//i.test(url);
+}
+
+function getSlidesToShow() {
+    if (typeof window === 'undefined') return 3;
+    const w = window.innerWidth;
+    if (w <= 768) return 1;
+    if (w <= 991) return 2;
+    return 3;
 }
 
 
@@ -41,41 +50,31 @@ function SamplePrevArrow(props) {
 const RecentPosts = () => {
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [slidesToShow, setSlidesToShow] = useState(3);
 
-    var settings = {
-        arrows: true,
-        slidesToShow: 3,
+    useEffect(() => {
+        setSlidesToShow(getSlidesToShow());
+        const onResize = () => setSlidesToShow(getSlidesToShow());
+        window.addEventListener('resize', onResize);
+        return () => window.removeEventListener('resize', onResize);
+    }, []);
+
+    var settings = useMemo(() => ({
+        arrows: slidesToShow > 1,
+        slidesToShow,
+        slidesToScroll: 1,
         infinite: true,
         dots: false,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3,
-                }
-            },
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                }
-            },
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                }
-            }
-        ]
-    };
+            { breakpoint: 1200, settings: { slidesToShow: Math.min(3, slidesToShow), slidesToScroll: 1 } },
+            { breakpoint: 1024, settings: { slidesToShow: Math.min(3, slidesToShow), slidesToScroll: 1 } },
+            { breakpoint: 991, settings: { slidesToShow: Math.min(2, slidesToShow), slidesToScroll: 1 } },
+            { breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+            { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+        ],
+    }), [slidesToShow]);
 
     useEffect(() => {
         fetch('/api/recent-posts?limit=8')

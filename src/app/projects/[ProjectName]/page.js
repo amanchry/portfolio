@@ -29,9 +29,7 @@ export default function ProjectDetailsPage() {
 			.finally(() => setLoading(false));
 	}, [projectName]);
 
-	const projectDisplayName =
-		(Project && Project.ProjectName) ||
-		(projectName && projectName.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()));
+
 
 	return (
 		<div className="page-content bg-white">
@@ -39,12 +37,23 @@ export default function ProjectDetailsPage() {
 				className="dlab-bnr-inr overlay-primary"
 				style={{ backgroundImage: 'url(/images/background/banner_1.png)' }}
 			>
-				<PageTitle
-					motherMenu={projectDisplayName || 'Project'}
-					activeMenu={projectDisplayName || 'Project'}
+				{Project ? (
+					<PageTitle
+					motherMenu={Project.ProjectName || 'Project'}
+					activeMenu={Project.ProjectName || 'Project'}
 					middleMenu="Projects"
 					middleMenuHref="/projects"
 				/>
+
+				):(
+					<PageTitle
+					motherMenu={'Project'}
+					activeMenu={'Project'}
+					middleMenu="Projects"
+					middleMenuHref="/projects"
+				/>
+				)}
+				
 			</div>
 			{loading && <div className="container p-a30 text-center">Loading...</div>}
 			{!loading && !Project && <div className="container p-a30 text-center">Project not found.</div>}
