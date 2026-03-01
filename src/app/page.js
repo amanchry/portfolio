@@ -118,10 +118,10 @@ const HomePage = () => {
               </div>
             </div>
             <div className="container">
-              <div className="row ">
+              <div className="row focus-areas-row">
 
-                <div className="col-md-3 col-sm-12 m-b30 ">
-                  <div className="icon-bx-wraper expertise  bx-style-1 p-a20 center" style={{ minHeight: 310}}>
+                <div className="col-12 col-sm-6 col-lg-3 m-b30">
+                  <div className="icon-bx-wraper expertise bx-style-1 p-a20 center focus-area-card">
                     <div className="icon-lg m-b20"> <Link href={"#"} className="icon-cell"><i className="flaticon-tracking-map " /></Link> </div>
                     <div className="icon-content">
                       <h5 className="dlab-tilte">Geospatial Data Analytics</h5>
@@ -129,8 +129,8 @@ const HomePage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-sm -12 m-b30 ">
-                  <div className="icon-bx-wraper expertise  bx-style-1 p-a20 center" style={{ minHeight: 310}}>
+                <div className="col-12 col-sm-6 col-lg-3 m-b30">
+                  <div className="icon-bx-wraper expertise bx-style-1 p-a20 center focus-area-card">
                   
                     <div className="icon-lg m-b20"> <Link href={"#"} className="icon-cell"><i className="flaticon-devices" /></Link> </div>
                     {/* <div className="icon-lg m-b20"> <Link href={"#"} className="icon-cell"><i className="flaticon-layers" /></Link> </div> */}
@@ -141,8 +141,8 @@ const HomePage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-sm-12 m-b30 ">
-                  <div className="icon-bx-wraper expertise  bx-style-1 p-a20 center" style={{ minHeight: 310}}>
+                <div className="col-12 col-sm-6 col-lg-3 m-b30">
+                  <div className="icon-bx-wraper expertise bx-style-1 p-a20 center focus-area-card">
                     <div className="icon-lg m-b20"> <Link href={"#"} className="icon-cell"><i className="flaticon-map-location" /></Link> </div>
                     <div className="icon-content">
                       <h5 className="dlab-tilte">Remote Sensing</h5>
@@ -150,8 +150,8 @@ const HomePage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-sm-12 m-b30 ">
-                  <div className="icon-bx-wraper expertise  bx-style-1 p-a20 center" style={{ minHeight: 310}}>
+                <div className="col-12 col-sm-6 col-lg-3 m-b30">
+                  <div className="icon-bx-wraper expertise bx-style-1 p-a20 center focus-area-card">
                     <div className="icon-lg m-b20"> <Link href={"#"} className="icon-cell"><i className="flaticon-mind" /></Link> </div>
                     <div className="icon-content">
                       <h5 className="dlab-tilte">GeoAI</h5>
