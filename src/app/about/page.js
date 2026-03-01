@@ -60,14 +60,14 @@ const AboutPage = () => {
                                     <div className="col-lg-12 about-bio">
                                         <p>
 
-                                            The world is constantly generating data — from satellites orbiting above us to sensors embedded across landscapes.
+                                            The world is constantly generating data - from satellites orbiting above us to sensors embedded across landscapes.
                                             But data alone doesn’t change anything. Decisions do. I build spatial intelligence infrastructures that transform
                                             raw geodata into tools for planning, monitoring, and meaningful action.
 
                                         </p>
 
                                         <p>
-                                            Hi, I’m Aman Chaudhary. I graduated from <a href="https://iitgn.ac.in" target="_blank" rel="noreferrer noopener">IIT Gandhinagar</a>, India, with a B.Tech in Civil Engineering and a minor
+                                            Hi, I’m Aman Chaudhary. I graduated from <a href="https://iitgn.ac.in" target="_blank" rel="noreferrer noopener">IIT Gandhinagar</a>, India, with a Bachelor of Technology in Civil Engineering and a minor
                                             in Computer Science and Engineering. I am currently pursuing my Master’s in Geo-Information Science and Earth Observation
                                             (GeoAI specialization) at <a href="https://www.itc.nl/" target="_blank" rel="noreferrer noopener">ITC, University of Twente</a>, where I explore how artificial intelligence can strengthen spatial
                                             systems and Earth observation workflows.
@@ -76,7 +76,7 @@ const AboutPage = () => {
                                         </p>
 
                                         <p>
-                                            In my current role, I work as a Geospatial Solutions Developer and Consultant with the <a href="https://www.worldbank.org" target="_blank" rel="noreferrer noopener">World Bank Group</a>,
+                                            In my current role, I work as a Geospatial Solutions Developer, Consultant with the <a href="https://www.worldbank.org" target="_blank" rel="noreferrer noopener">World Bank Group</a>,
                                             contributing to the Global Water Informatics team. My work focuses on developing WebGIS-based digital solutions under
                                             the Water Accounting workstream within the <a href="https://www.worldbank.org/en/topic/water" target="_blank" rel="noreferrer noopener">Water Global Practice</a>, supporting initiatives in water accounting,
                                             agro-climatic analytics, and irrigation performance monitoring across diverse regions.
@@ -84,11 +84,17 @@ const AboutPage = () => {
                                         </p>
 
 
-                                        <p className="m-b0">
+                                        <p>
                                             My work spans WebGIS, open-source software development, remote sensing, GeoAI, and scalable geospatial infrastructure.
                                             From satellite data processing to deploying full-stack spatial platforms, I work on building systems that are reliable, practical, and easy to use.
 
                                         </p>
+
+                                        <p className="m-b0">
+                                        In my free time, I enjoy track and field sports, strength training at the gym, listening to Arijit Singh's music, and traveling around the world.
+
+                                        </p>
+
 
 
                                     </div>
@@ -108,7 +114,7 @@ const AboutPage = () => {
                         <div className="container">
                             <div className="section-head  text-center">
                                         <h2 className="box-title m-tb0 max-w800 m-auto">Technologies I Work With<span className="bg-primary"></span></h2>
-                                        <p>I integrate open-source technologies with modern cloud architectures to build scalable, intelligent geospatial solutions.</p>
+                                        <p>I integrate open-source technologies with modern cloud architectures to build scalable, intelligent geospatial solutions. Below are some of the core tools I use in my workflow.</p>
                                     </div>
 
                             <div className="row ">

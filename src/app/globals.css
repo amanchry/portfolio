@@ -181,3 +181,18 @@ body {
 }
 .admin-toast-icon-error { background: rgba(255, 255, 255, 0.3); }
 .admin-toast-message { flex: 1; }
+
+/* Home about: on mobile, photo on top and text below */
+@media (max-width: 991px) {
+  .about-row-photo-top-on-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .about-row-photo-top-on-mobile .col-lg-6:first-child {
+    order: 2;
+  }
+  .about-row-photo-top-on-mobile .col-lg-6:last-child {
+    order: 1;
+  }
+}

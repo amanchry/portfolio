@@ -44,7 +44,7 @@ const HomePage = () => {
       <div className="content-block ">
         <div className="section-full content-inner about-progress" ref={aboutProgressRef}>
           <div className="container">
-            <div className="row mt-3">
+            <div className="row about-row-photo-top-on-mobile mt-3">
               <div className="col-md-12 col-lg-6">
                 <h2 className="font-weight-400">Aman Chaudhary</h2>
                 <p className="font-weight-300 sub-title" style={{ fontSize: "18px" }}>
@@ -113,8 +113,8 @@ const HomePage = () => {
           <div className="section-full content-inner">
             <div className="container">
               <div className="section-head text-black">
-                <h2 className="box-title m-tb0">What I Do<span className="bg-primary"></span></h2>
-                <p>I design and build spatial intelligence systems that transform complex geodata into tools for real-world decision-making.</p>
+                <h2 className="box-title m-tb0">Core Focus Areas<span className="bg-primary"></span></h2>
+                <p>I design and build spatial systems that transform complex geodata into tools for real-world decision-making.</p>
               </div>
             </div>
             <div className="container">
@@ -124,7 +124,7 @@ const HomePage = () => {
                   <div className="icon-bx-wraper expertise  bx-style-1 p-a20 center" style={{ minHeight: 310}}>
                     <div className="icon-lg m-b20"> <Link href={"#"} className="icon-cell"><i className="flaticon-tracking-map " /></Link> </div>
                     <div className="icon-content">
-                      <h5 className="dlab-tilte">GIS & Geospatial Data Analytics</h5>
+                      <h5 className="dlab-tilte">Geospatial Data Analytics</h5>
                       <p>Spatial analysis, data modeling, and large-scale geospatial data processing.</p>
                     </div>
                   </div>
