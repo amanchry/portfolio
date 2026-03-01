@@ -141,6 +141,11 @@ export default function BlogDetailsPage() {
                       <ReactMarkdown
                         remarkPlugins={[remarkGfm]}
                         components={{
+                          table: ({ children, ...props }) => (
+                            <div className="blog-table-wrapper">
+                              <table {...props}>{children}</table>
+                            </div>
+                          ),
                           img: ({ ...props }) => (
                             <img
                               {...props}
@@ -160,7 +165,7 @@ export default function BlogDetailsPage() {
                     </div>
                   ) : (
                     <div
-                      className="dlab-post-text blog-content blog-reader-content"
+                      className="dlab-post-text blog-content blog-reader-content blog-reader-content-html"
                       dangerouslySetInnerHTML={{ __html: contentToHtml(blog.Content) }}
                     />
                   )}
