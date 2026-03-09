@@ -64,7 +64,8 @@ const RecentPosts = () => {
         slidesToShow,
         slidesToScroll: 1,
         infinite: true,
-        dots: false,
+        // On mobile (slidesToShow === 1) show dots instead of arrows
+        dots: slidesToShow === 1,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         responsive: [
@@ -91,66 +92,85 @@ const RecentPosts = () => {
             {loading && <p className="text-center p-a20">Loading latest posts...</p>}
             {!loading && posts.length === 0 && <p className="text-center p-a20">No recent posts yet.</p>}
             {!loading && posts.length > 0 && (
-                <Slider className="dots-style-center img-carousel owl-carousel owl-btn-center-lr owl-btn-3 " {...settings}>
-                    {posts.map((item) => {
-                        const href = resolveHref(item);
-                        const external = isExternal(href);
-                        return (
-                            <div className="item pr-3" key={item.id}>
-                                <div className="blog-post blog-grid blog-rounded blog-effect1">
-                                    <div
-                                        className="dlab-post-media dlab-img-effect"
-                                        style={{
-                                            aspectRatio: '16/9',
-                                            overflow: 'hidden',
-                                            backgroundColor: '#eee',
-                                        }}
-                                    >
-                                        <img
-                                            src={item.Thumbnail || '/images/aman1.jpg'}
-                                            alt={item.title || ''}
+                <>
+                    {slidesToShow === 1 && posts.length > 1 && (
+                        <p
+                            className="text-center"
+                            style={{
+                                fontSize: '12px',
+                                color: '#6b7280',
+                                marginBottom: '0.5rem',
+                            }}
+                        >
+                            Swipe sideways to see more posts →
+                        </p>
+                    )}
+                    <Slider className="dots-style-center img-carousel owl-carousel owl-btn-center-lr owl-btn-3 " {...settings}>
+                        {posts.map((item) => {
+                            const href = resolveHref(item);
+                            const external = isExternal(href);
+                            return (
+                                <div className="item pr-3" key={item.id}>
+                                    <div className="blog-post blog-grid blog-rounded blog-effect1">
+                                        <div
+                                            className="dlab-post-media dlab-img-effect"
                                             style={{
-                                                width: '100%',
-                                                height: '100%',
-                                                objectFit: 'cover',
-                                                display: 'block',
+                                                aspectRatio: '16/9',
+                                                overflow: 'hidden',
+                                                backgroundColor: '#eee',
                                             }}
-                                        />
-                                    </div>
-                                    <div className="dlab-info p-a20 border-1">
-                                        <div className="dlab-post-title ">
-                                            <h5 className="post-title font-weight-500">
-                                                {/* {external ? (
-                                                        <a href={href} target="_blank" rel="noreferrer">{item.Title}</a>
-                                                    ) : (
-                                                        <Link href={href}>{item.Title}</Link>
-                                                    )} */}
-                                                {item.Title}
+                                        ><a href={external ? href : null} target={external ? '_blank' : null} rel={external ? 'noreferrer' : null}>
 
-                                            </h5>
+                                            <img
+                                                src={item.Thumbnail || '/images/aman1.jpg'}
+                                                alt={item.title || ''}
+                                                style={{
+                                                    width: '100%',
+                                                    height: '100%',
+                                                    objectFit: 'cover',
+                                                    display: 'block',
+                                                }}
+                                            />
+                                            </a>
                                         </div>
-                                        <div className="dlab-post-meta ">
-                                            <ul>
-                                                <li className="post-date">
-                                                    <i className="fa fa-calendar"></i>{' '}
-                                                    <strong>{formatDate(item.PostDate || item.PublishDate)}</strong>
-                                                </li>
-                                                {item.Place && (
-                                                    <li className="post-place" style={{ marginTop: 4 }}>
-                                                        <i className="fa fa-map-marker"></i> {item.Place}
+                                        <div className="dlab-info p-a20 border-1">
+                                            <div className="dlab-post-title ">
+                                                <h5 className="post-title font-weight-500">
+
+
+                                                    {external ? (
+                                                            <a href={href} target="_blank" rel="noreferrer">{item.Title}</a>
+                                                        ) : (
+                                                            // <Link href={href}>{item.Title}</Link>
+                                                            <span>{item.Title}</span>
+                                                        )}
+                                                    {/* {item.Title} */}
+
+                                                </h5>
+                                            </div>
+                                            <div className="dlab-post-meta ">
+                                                <ul>
+                                                    <li className="post-date">
+                                                        <i className="fa fa-calendar"></i>{' '}
+                                                        <strong>{formatDate(item.PostDate || item.PublishDate)}</strong>
                                                     </li>
-                                                )}
-                                            </ul>
+                                                    {item.Place && (
+                                                        <li className="post-place" style={{ marginTop: 4 }}>
+                                                            <i className="fa fa-map-marker"></i> {item.Place}
+                                                        </li>
+                                                    )}
+                                                </ul>
+                                            </div>
+                                            {/* <div className="dlab-post-text">
+                                                    <p style={{ fontSize: '14px' }}>{item.ShortDescription}</p>
+                                                </div> */}
                                         </div>
-                                        {/* <div className="dlab-post-text">
-                                                <p style={{ fontSize: '14px' }}>{item.ShortDescription}</p>
-                                            </div> */}
                                     </div>
                                 </div>
-                            </div>
-                        );
-                    })}
-                </Slider>
+                            );
+                        })}
+                    </Slider>
+                </>
             )}
         </>
 
