@@ -53,9 +53,9 @@ const HomePage = () => {
                 </p>
 
                 <p style={{ fontSize: "18px" }}>
-                  I’m a Geospatial Technologies Specialist with a passion for developing intelligent, interactive platforms that transform complex spatial data into actionable insights.
+                  I’m a Geospatial Technologies Specialist focused on building intelligent platforms that transform complex spatial data into actionable insights.
                   <br /><br />
-                  With deep expertise in WebGIS, remote sensing, spatial analytics, and Earth observation, I build digital tools that enable decision-making, monitoring, and planning across diverse domains - including water resources, agriculture, food systems, climate, urban development, disaster risk, and sustainability.
+                 With expertise in GIS, remote sensing, GeoAI, spatial analytics, big data processing, and GIS software development, I design and develop tools that support decision-making, monitoring, and planning across diverse domains - including water resources, agriculture, food systems, climate, urban development, disaster risk, and sustainability.
                   <br /><br />
                   From visualizing satellite data to deploying full-stack spatial platforms, I focus on scalable, open-source solutions tailored to real-world impact.
 

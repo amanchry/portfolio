@@ -1,12 +1,22 @@
 'use client';
 
 import React from 'react';
+import dynamic from 'next/dynamic';
 import PageTitle from '@/components/PageTitle';
 import Image from 'next/image';
 import Slider from "react-slick";
 import Link from 'next/link';
 import RecentPosts from '@/components/RecentPosts';
 import GallerySection from '@/components/GallerySection';
+
+const VisitedCountriesMap = dynamic(() => import('@/components/VisitedCountriesMap'), {
+  ssr: false,
+  loading: () => (
+    <div className="text-center p-a30 text-muted" style={{ minHeight: 440 }}>
+      Loading map…
+    </div>
+  ),
+});
 
 
 
@@ -103,9 +113,7 @@ const AboutPage = () => {
                         </div>
                     </div>
 
-
-
-
+                    
 
                     <div className="section-full content-inner bg-white mfp-gallery">
 
@@ -200,6 +208,25 @@ const AboutPage = () => {
                             </div>
                         </div>
 
+                    </div>
+
+                    <div className="section-full content-inner-2 bg-white">
+                        <div className="container">
+                            <div className="section-head text-black text-center m-b30">
+                                <h2 className="box-title m-tb0 max-w800 m-auto">
+                                    Places I&apos;ve explored
+                                    <span className="bg-primary"></span>
+                                </h2>
+                                <p className="max-w800 m-auto">
+                                    Countries I&apos;ve traveled or covered for work. 
+                                </p>
+                            </div>
+                            <div className="row">
+                                <div className="col-12">
+                                    <VisitedCountriesMap />
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
 
