@@ -210,7 +210,7 @@ const AboutPage = () => {
 
                     </div>
 
-                    <div className="section-full content-inner-2 bg-white">
+                    {/* <div className="section-full content-inner-2 bg-white">
                         <div className="container">
                             <div className="section-head text-black text-center m-b30">
                                 <h2 className="box-title m-tb0 max-w800 m-auto">
@@ -227,7 +227,7 @@ const AboutPage = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
 
 
