@@ -48,11 +48,9 @@ const HomePage = () => {
               <div className="col-md-12 col-lg-6">
 
 
-                <h1 style={{ fontSize: "clamp(2.2rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.15, marginBottom: "1.2rem" }}>
-                  Hey, I&apos;m{' '}
-                  <span style={{  padding: "0 10px 4px", borderRadius: "4px", display: "inline-block" }}>
-                    Aman.
-                  </span>
+                <h1 style={{ fontSize: "clamp(2.2rem, 5vw, 3.8rem)", fontWeight: 500, lineHeight: 1.15, marginBottom: "1.2rem" }}>
+                  Hey, I&apos;m{' '}Aman.
+        
                 </h1>
 
 
