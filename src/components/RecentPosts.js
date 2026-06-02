@@ -64,6 +64,9 @@ const RecentPosts = () => {
         slidesToShow,
         slidesToScroll: 1,
         infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
         // On mobile (slidesToShow === 1) show dots instead of arrows
         dots: slidesToShow === 1,
         nextArrow: <SampleNextArrow />,

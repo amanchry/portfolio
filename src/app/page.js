@@ -46,19 +46,32 @@ const HomePage = () => {
           <div className="container">
             <div className="row about-row-photo-top-on-mobile mt-3">
               <div className="col-md-12 col-lg-6">
-                <h2 className="font-weight-400">Aman Chaudhary</h2>
-                <p className="font-weight-300 sub-title" style={{ fontSize: "18px" }}>
-                  Geospatial Technology | Remote Sensing | GeoAI<br />
-                  The World Bank | University of Twente | IIT Gandhinagar
+
+
+                <h1 style={{ fontSize: "clamp(2.2rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.15, marginBottom: "1.2rem" }}>
+                  Hey, I&apos;m{' '}
+                  <span style={{  padding: "0 10px 4px", borderRadius: "4px", display: "inline-block" }}>
+                    Aman.
+                  </span>
+                </h1>
+
+
+                {/* <h2 className="font-weight-400">Aman Chaudhary</h2> */}
+                <p className="font-weight-300 sub-title home-sub-title">
+                  Geospatial Technology | Earth Observation | GeoAI<br />
+                  The World Bank Group | University of Twente | IIT Gandhinagar
                 </p>
 
-                <p style={{ fontSize: "18px" }}>
-                  I’m a Geospatial Technologies Specialist focused on building intelligent platforms that transform complex spatial data into actionable insights.
+                <p className="home-body-text">
+                  I’m a Geospatial Technology Specialist focused on transforming complex spatial and environmental data into actionable intelligence for planning, monitoring, and decision-making.
                   <br /><br />
-                 With expertise in GIS, remote sensing, GeoAI, spatial analytics, big data processing, and GIS software development, I design and develop tools that support decision-making, monitoring, and planning across diverse domains - including water resources, agriculture, food systems, climate, urban development, disaster risk, and sustainability.
-                  <br /><br />
-                  From visualizing satellite data to deploying full-stack spatial platforms, I focus on scalable, open-source solutions tailored to real-world impact.
 
+ My work combines GIS, Earth Observation, Machine Learning, Geospatial Artificial Intelligence (GeoAI), spatial analytics, cloud computing, and software engineering to develop data-driven solutions 
+ across water resources, agriculture, food systems, climate resilience, urban development, disaster risk reduction, and sustainable development.
+
+                  <br /><br />
+
+From large-scale satellite data analytics to the design and deployment of geospatial platforms and decision-support systems, I focus on building scalable, open-source solutions that create real-world impact.
 
                 </p>
 
@@ -86,9 +99,11 @@ const HomePage = () => {
                                     </p> */}
               </div>
               <div className="col-md-12 col-lg-6">
-                <div className="img-half-bx align-items-stretch">
-                  <Image src="/images/aman1.jpg" alt="Aman Chaudhary" width={500} height={600} style={{ width: '100%', height: 'auto' }} />
-                </div>
+                {/* <div className="img-half-bx align-items-stretch"> */}
+                  <img src="/images/Aman_WB.png" alt="Aman Chaudhary" width={500} height={500}  style={{ width: '100%', height: 'auto', borderRadius:"20px" }} />
+
+                  {/* <Image src="/images/Aman_WB2.png" alt="Aman Chaudhary" width={500} height={600} style={{ width: '100%', height: 'auto' }} /> */}
+                {/* </div> */}
               </div>
               {/* <div className="col-md-12 col-lg-12">
                 <ul className="list-inline m-a0">

@@ -10,12 +10,12 @@ import RecentPosts from '@/components/RecentPosts';
 import GallerySection from '@/components/GallerySection';
 
 const VisitedCountriesMap = dynamic(() => import('@/components/VisitedCountriesMap'), {
-  ssr: false,
-  loading: () => (
-    <div className="text-center p-a30 text-muted" style={{ minHeight: 440 }}>
-      Loading map…
-    </div>
-  ),
+    ssr: false,
+    loading: () => (
+        <div className="text-center p-a30 text-muted" style={{ minHeight: 440 }}>
+            Loading map…
+        </div>
+    ),
 });
 
 
@@ -55,7 +55,7 @@ const AboutPage = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-5 col-md-4 about-img">
-                                <img src="/images/Aman_WB.png" data-tilt alt="Aman Chaudhary" />
+                                <img src="/images/Aman_WB3.png" data-tilt alt="Aman Chaudhary" />
                             </div>
 
                             <div className="col-lg-7 col-md-8">
@@ -101,8 +101,8 @@ const AboutPage = () => {
                                         </p>
 
                                         <p className="m-b0">
-                                        In my free time, I enjoy track and field sports, strength training at the gym, listening to Arijit Singh's music, and traveling around the world.
 
+                                            Outside of work, I enjoy track and field sports, strength training, traveling, and exploring new places and cultures.
                                         </p>
 
 
@@ -113,17 +113,17 @@ const AboutPage = () => {
                         </div>
                     </div>
 
-                    
+
 
                     <div className="section-full content-inner bg-white mfp-gallery">
 
 
                         {/* <div className="section-full content-inner-1 overlay-primary about-service bg-img-fix" style={{ backgroundImage: "url(" + bg2.src + ")" }}> */}
                         <div className="container">
-                            <div className="section-head  text-center">
-                                        <h2 className="box-title m-tb0 max-w800 m-auto">Technologies I Work With<span className="bg-primary"></span></h2>
-                                        <p>I integrate open-source technologies with modern cloud architectures to build scalable, intelligent geospatial solutions. Below are some of the core tools I use in my workflow.</p>
-                                    </div>
+                            {/* <div className="section-head  text-center">
+                                <h2 className="box-title m-tb0 max-w800 m-auto">Technologies I Work With<span className="bg-primary"></span></h2>
+                                <p>I integrate open-source technologies with modern cloud architectures to build scalable, intelligent geospatial solutions. Below are some of the core tools I use in my workflow.</p>
+                            </div>
 
                             <div className="row ">
 
@@ -193,19 +193,11 @@ const AboutPage = () => {
                                 </div>
 
 
-                                {/* <div className="col-lg-6 col-md-6 col-sm-6 m-b30">
-                                    <div className="icon-bx-wraper bx-style-1 p-a30 center">
-                                        <div className="icon-lg text-white m-b20"> <Link href={"#"} className="icon-cell text-white"><i className="flaticon-map-location" /></Link> </div>
-                                        <div className="icon-content">
-                                            <h5 className="dlab-tilte">Other Tools</h5>
-                                            <p>Leaflet JS, Openlayers, ArcGIS API</p>
-                                        </div>
-                                    </div>
-                                </div> */}
+        
 
 
 
-                            </div>
+                            </div> */}
                         </div>
 
                     </div>

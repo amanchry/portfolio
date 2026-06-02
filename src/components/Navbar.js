@@ -67,7 +67,7 @@ const Navbar = () => {
                         </Link>
 
                         <Link href="/projects" className={isActive('/projects') ? 'nav_item active_nav' : 'nav_item'} onClick={handleLinkClick}>
-                            Projects
+                            My Work
                         </Link>
 
                         <Link href="/blogs" className={isActive('/blogs') ? 'nav_item active_nav' : 'nav_item'} onClick={handleLinkClick}>

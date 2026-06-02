@@ -80,7 +80,7 @@ class Header extends Component {
                                     <ul className="nav navbar-nav">
                                         <li><Link href="/">Home</Link></li>
                                         <li><Link href="/resume">Resume</Link></li>
-                                        <li><Link href="/portfolio">Portfolio</Link></li>
+                                        <li><Link href="/portfolio">Work</Link></li>
                                         {/* <li><Link href="/blog">Blogs</Link></li> */}
 
                                         

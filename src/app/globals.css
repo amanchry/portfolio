@@ -299,3 +299,86 @@ body {
     order: 1;
   }
 }
+
+/* ── Home hero text sizes ── */
+.home-sub-title {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.home-body-text {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* ── Home page mobile responsiveness ── */
+@media (max-width: 767px) {
+  /* Hero section padding */
+  .about-progress {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  /* Photo: full height on mobile */
+  .about-row-photo-top-on-mobile .col-lg-6:last-child img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Body text: slightly smaller on mobile */
+  .about-progress p,
+  .home-body-text {
+    font-size: 15px !important;
+    line-height: 1.7;
+  }
+
+  /* Sub-title tagline */
+  .about-progress .sub-title,
+  .home-sub-title {
+    font-size: 14px !important;
+    line-height: 1.5;
+  }
+
+  /* "Know more" button: full width on mobile */
+  .about-progress .dlab-post-readmore {
+    margin-top: 1.2rem;
+  }
+  .about-progress .dlab-post-readmore .site-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Core Focus Areas: tighten spacing */
+  .focus-areas-row {
+    margin-top: 0;
+  }
+  .focus-areas-row .col-12 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .focus-area-card {
+    min-height: unset;
+    padding: 16px !important;
+  }
+  .focus-area-card .icon-content h5 {
+    font-size: 14px;
+  }
+  .focus-area-card .icon-content p {
+    font-size: 13px;
+  }
+
+  /* Section headings */
+  .section-head h2.box-title {
+    font-size: 22px !important;
+  }
+  .section-head p {
+    font-size: 14px !important;
+  }
+
+  /* Latest Posts section */
+  .section-full.bg-white.content-inner {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+}
