@@ -55,15 +55,12 @@ export default function AdminPage() {
 
 
                   <Button size="3" variant="soft" asChild>
-                    <Link href="https://clustrmaps.com/site/1c1eu" target='_blank' title="Visit tracker">Visitors count</Link>
+                    <Link href="https://mapmyvisitors.com/web/1c6ps" target='_blank' title="Visit tracker">Visitors count</Link>
                   </Button>
 
                   <Button size="3" variant="soft" color="red" onClick={handleSignOut}>
                     Sign out
                   </Button>
-
-
-
 
 
 

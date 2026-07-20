@@ -20,32 +20,23 @@ class Footer extends Component {
                                     </h6> */}
 
                                     <h4>
-                                    Connect with Me
+                                        Connect with Me
                                     </h4>
-                                    {/* <a href="https://clustrmaps.com/site/1c1eu" target='_blank' title="Visit tracker">
-                                        Visitors count
-                                    </a> */}
-                                        <img style={{ display: "none" }} src="//www.clustrmaps.com/map_v2.png?d=K8WdSOM7rI24lyqsLSPAv43unUJeVyGLR-WYhFLHRTs&cl=ffffff" />
 
+
+                                    <img style={{ display: "none" }} src="https://mapmyvisitors.com/map.png?d=K9GvT5sHa27xngMXstcKClwUh1dWEH6Z_SkFUTINCME&cl=ffffff" />
 
                                     <ul className="list-inline m-a0">
                                         <li><a href="https://www.linkedin.com/in/amanchry/" target='_blank' rel="noreferrer" className="site-button  circle mr-1 linkedin" style={{ fontSize: "24px" }}><i className="fa fa-linkedin"></i></a></li>
                                         <li><a href="https://github.com/amanchry" target='_blank' rel="noreferrer" className="site-button  circle mr-1 facebook" style={{ fontSize: "24px" }}><i className="fa fa-github"></i></a></li>
-                                        <li><a href="https://www.instagram.com/a_man__chaudhary/" target='_blank' rel="noreferrer" className="site-button  circle mr-1 instagram" style={{ fontSize: "24px" }}><i className="fa fa-instagram"></i></a></li>
+                                        <li><a href="https://www.instagram.com/a.man_chaudhary" target='_blank' rel="noreferrer" className="site-button  circle mr-1 instagram" style={{ fontSize: "24px" }}><i className="fa fa-instagram"></i></a></li>
                                         <li><a href="https://twitter.com/amanchry" target='_blank' rel="noreferrer" className="site-button  circle mr-1 twitter" style={{ fontSize: "24px" }}><i className="fa fa-twitter"></i></a></li>
                                         <li><a href="https://medium.com/@amanchry" target='_blank' rel="noreferrer" className="site-button  circle mr-1 medium" style={{ fontSize: "24px" }}><i className="fa fa-medium"></i></a></li>
                                         <li><a href="mailto:amanchaudhary.web@gmail.com" className="site-button  circle mr-1 facebook" style={{ fontSize: "24px" }}><i className="fa fa-envelope"></i></a></li>
                                     </ul>
 
 
-                                    {/* <ul className="list-inline m-a0 text-center">
-                                        <li><a href="https://github.com/amanchry" target='_blank' rel="noreferrer" className="site-button facebook circle mr-1"><i className="fa fa-github"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/in/amanchry/" target='_blank' rel="noreferrer" className="site-button linkedin circle mr-1"><i className="fa fa-linkedin"></i></a></li>
-                                        <li><a href="https://www.instagram.com/a_man__chaudhary/" target='_blank' rel="noreferrer" className="site-button instagram circle mr-1"><i className="fa fa-instagram"></i></a></li>
-                                        <li><a href="https://twitter.com/amanchry" target='_blank' rel="noreferrer" className="site-button twitter circle mr-1"><i className="fa fa-twitter"></i></a></li>
-                                        <li><a href="https://medium.com/@amanchry" target='_blank' rel="noreferrer" className="site-button medium circle mr-1"><i className="fa fa-medium"></i></a></li>
-                                        <li><a href="mailto:amanchaudhary.web@gmail.com" className="site-button google-plus circle mr-1"><i className="fa fa-envelope"></i></a></li>
-                                    </ul> */}
+
 
 
 
