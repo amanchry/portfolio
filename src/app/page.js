@@ -134,43 +134,48 @@ From large-scale satellite data analytics to the design and deployment of geospa
               <div className="row focus-areas-row">
 
                 <div className="col-12 col-sm-6 col-lg-3 m-b30">
-                  <div className="icon-bx-wraper expertise bx-style-1 p-a20 center focus-area-card">
-                    <div className="icon-lg m-b20"> <Link href={"#"} className="icon-cell"><i className="flaticon-tracking-map " /></Link> </div>
-                    <div className="icon-content">
+                  <Link href={"#"} className="focus-area-card focus-card-1">
+                    <div className="focus-card-bg" style={{ backgroundImage: "url(/images/areas/geospatial.jpg)" }}></div>
+                    <div className="focus-card-tint"></div>
+                    <div className="focus-card-overlay"></div>
+                    <div className="focus-card-content">
                       <h5 className="dlab-tilte">Geospatial Data Analytics</h5>
                       <p>Spatial analysis, data modeling, and large-scale geospatial data processing.</p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
                 <div className="col-12 col-sm-6 col-lg-3 m-b30">
-                  <div className="icon-bx-wraper expertise bx-style-1 p-a20 center focus-area-card">
-                  
-                    <div className="icon-lg m-b20"> <Link href={"#"} className="icon-cell"><i className="flaticon-devices" /></Link> </div>
-                    {/* <div className="icon-lg m-b20"> <Link href={"#"} className="icon-cell"><i className="flaticon-layers" /></Link> </div> */}
-
-                    <div className="icon-content">
+                  <Link href={"#"} className="focus-area-card focus-card-2">
+                    <div className="focus-card-bg" style={{ backgroundImage: "url(/images/areas/webgis.png)" }}></div>
+                    <div className="focus-card-tint"></div>
+                    <div className="focus-card-overlay"></div>
+                    <div className="focus-card-content">
                       <h5 className="dlab-tilte">Open-Source WebGIS & Spatial Infrastructure</h5>
                       <p>Scalable, production-ready geospatial systems and web-based GIS applications.</p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
                 <div className="col-12 col-sm-6 col-lg-3 m-b30">
-                  <div className="icon-bx-wraper expertise bx-style-1 p-a20 center focus-area-card">
-                    <div className="icon-lg m-b20"> <Link href={"#"} className="icon-cell"><i className="flaticon-map-location" /></Link> </div>
-                    <div className="icon-content">
+                  <Link href={"#"} className="focus-area-card focus-card-3">
+                    <div className="focus-card-bg" style={{ backgroundImage: "url(/images/areas/remote_sensing.jpg)" }}></div>
+                    <div className="focus-card-tint"></div>
+                    <div className="focus-card-overlay"></div>
+                    <div className="focus-card-content">
                       <h5 className="dlab-tilte">Remote Sensing</h5>
                       <p>Satellite data processing and Earth observation workflows.</p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
                 <div className="col-12 col-sm-6 col-lg-3 m-b30">
-                  <div className="icon-bx-wraper expertise bx-style-1 p-a20 center focus-area-card">
-                    <div className="icon-lg m-b20"> <Link href={"#"} className="icon-cell"><i className="flaticon-mind" /></Link> </div>
-                    <div className="icon-content">
+                  <Link href={"#"} className="focus-area-card focus-card-4">
+                    <div className="focus-card-bg" style={{ backgroundImage: "url(/images/areas/geoai.jpg)" }}></div>
+                    <div className="focus-card-tint"></div>
+                    <div className="focus-card-overlay"></div>
+                    <div className="focus-card-content">
                       <h5 className="dlab-tilte">GeoAI</h5>
                       <p>Artificial intelligence for spatial data analysis.</p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
 
 
