@@ -51,7 +51,7 @@ export async function POST(req) {
       );
     }
 
-    const tags = parseJsonArray(tagsRaw, ['']);
+    const tags = parseJsonArray(tagsRaw, []);
     const technology = parseJsonArray(technologyRaw, ['']);
 
     const imageFile = formData.get('image');

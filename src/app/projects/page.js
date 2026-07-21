@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import PageTitle from '@/components/PageTitle';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -12,9 +12,8 @@ function stripHtml(html) {
 }
 
 function PortfolioItem() {
-	const [tag, setTag] = useState('Show All');
+	const [activeFilter, setActiveFilter] = useState('all');
 	const [projects, setProjects] = useState([]);
-	const [filteredImages, setFilterdImages] = useState([]);
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
@@ -27,32 +26,83 @@ function PortfolioItem() {
 			.finally(() => setLoading(false));
 	}, []);
 
-	useEffect(() => {
-		if (tag === 'Show All') {
-			setFilterdImages(projects);
-		} else {
-			setFilterdImages(projects.filter((project) => project.Tags?.some((t) => t === tag)));
-		}
-	}, [tag, projects]);
+	const filteredProjects = useMemo(() => {
+		if (activeFilter === 'all') return projects;
+		return projects.filter((project) => project.Tags?.includes(activeFilter));
+	}, [projects, activeFilter]);
+
+	const visibleFilters = useMemo(() => {
+		const used = new Set();
+		projects.forEach((project) => {
+			(project.Tags || []).forEach((tag) => used.add(tag));
+		});
+		return Array.from(used).sort((a, b) => a.localeCompare(b));
+	}, [projects]);
+
+	const filterCounts = useMemo(() => {
+		const counts = { all: projects.length };
+		visibleFilters.forEach((category) => {
+			counts[category] = projects.filter((project) => project.Tags?.includes(category)).length;
+		});
+		return counts;
+	}, [projects, visibleFilters]);
 
 	return (
 		<div className="section-full content-inner portfolio-section">
 			<div className="container">
-				<div className="section-head text-black text-center m-b40">
+				<div className="section-head text-black text-center m-b20">
 					<h4 className="text-gray-dark font-weight-300 m-b10">Here are some of the Projects I&apos;ve Worked On</h4>
 				</div>
+
+				{visibleFilters.length > 0 && (
+					<div className="project-filters m-b30">
+						<ul className="project-filters-list">
+							<li className={activeFilter === 'all' ? 'active' : ''}>
+								<button
+									type="button"
+									className={`project-filter-btn${activeFilter === 'all' ? ' project-filter-btn-active' : ''}`}
+									onClick={() => setActiveFilter('all')}
+									aria-pressed={activeFilter === 'all'}
+								>
+									All Projects
+									<span className="project-filter-count">{filterCounts.all}</span>
+								</button>
+							</li>
+							{visibleFilters.map((category) => {
+								const isActive = activeFilter === category;
+								return (
+									<li key={category} className={isActive ? 'active' : ''}>
+										<button
+											type="button"
+											className={`project-filter-btn${isActive ? ' project-filter-btn-active' : ''}`}
+											onClick={() => setActiveFilter(category)}
+											aria-pressed={isActive}
+										>
+											{category}
+											<span className="project-filter-count">{filterCounts[category] ?? 0}</span>
+										</button>
+									</li>
+								);
+							})}
+						</ul>
+					</div>
+				)}
+
 				{loading && <p className="text-center">Loading projects...</p>}
-				{!loading && filteredImages.length === 0 && <p className="text-center">No projects yet.</p>}
+				{!loading && projects.length === 0 && <p className="text-center">No projects yet.</p>}
+				{!loading && projects.length > 0 && filteredProjects.length === 0 && (
+					<p className="text-center text-muted">No projects match this filter.</p>
+				)}
 				<div className="row">
 					{!loading &&
-						filteredImages.map((project, index) => {
+						filteredProjects.map((project) => {
 							const descriptionText = stripHtml(project.Description || '').slice(0, 140);
 							const descriptionDisplay = descriptionText + (descriptionText.length >= 140 ? '…' : '');
 							const projectDate = project.ProjectDate
 								? new Date(project.ProjectDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short' })
 								: null;
 							return (
-								<div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 m-b30" key={index}>
+								<div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 m-b30" key={project.id || project.ProjectName}>
 									<div
 										className="dlab-box portfolio-box bg-white border"
 										style={{

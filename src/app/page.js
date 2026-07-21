@@ -49,42 +49,49 @@ const HomePage = () => {
 
 
                 <h1 style={{ fontSize: "clamp(2.2rem, 5vw, 3.8rem)", fontWeight: 500, lineHeight: 1.15, marginBottom: "1.2rem" }}>
-                  Hey, I&apos;m{' '}Aman.
-        
+                  Hi, I&apos;m{' '}Aman.
+
                 </h1>
 
 
                 {/* <h2 className="font-weight-400">Aman Chaudhary</h2> */}
-                <p className="font-weight-300 sub-title home-sub-title">
-                  Geospatial Technology | Earth Observation | GeoAI<br />
-                  The World Bank Group | University of Twente | IIT Gandhinagar
-                </p>
+                <div className="home-sub-title">
+                  <ul className="badge-pill-list">
+                    {["Geospatial Technology", "Earth Observation", "GeoAI"].map((item) => (
+                      <li key={item} className="badge-pill">{item}</li>
+                    ))}
+                  </ul>
+                  <ul className="badge-pill-list">
+                    {["The World Bank Group", "University of Twente", "IIT Gandhinagar"].map((item) => (
+                      <li key={item} className="badge-pill">{item}</li>
+                    ))}
+                  </ul>
+                </div>
 
                 <p className="home-body-text">
-                  I’m a Geospatial Technology Specialist focused on transforming complex spatial and environmental data into actionable intelligence for planning, monitoring, and decision-making.
+                  I'm a Geospatial Technologist focused on transforming complex spatial and environmental data into actionable intelligence for planning, monitoring, and decision-making.
                   <br /><br />
 
- My work combines GIS, Earth Observation, Machine Learning, Geospatial Artificial Intelligence (GeoAI), spatial analytics, cloud computing, and software engineering to develop data-driven solutions 
- across water resources, agriculture, food systems, climate resilience, urban development, disaster risk reduction, and sustainable development.
-
+                  My work combines Geographic Information Systems (GIS), Earth Observation, Machine Learning, Geospatial Artificial Intelligence (GeoAI), spatial analytics, cloud computing, and software engineering 
+                  to develop data-driven solutions for water resources, agriculture, food systems, climate resilience, urban development, disaster risk reduction, and sustainable development.
                   <br /><br />
 
-From large-scale satellite data analytics to the design and deployment of geospatial platforms and decision-support systems, I focus on building scalable, open-source solutions that create real-world impact.
+                  From large-scale satellite data analytics to the design and deployment of geospatial platforms and decision-support systems, I focus on building scalable, open-source solutions that create real-world impact.
 
                 </p>
 
                 <div className="dlab-post-readmore blog-share">
-                        <Link
-                          href={`/about`}
-                          title="Know more"
-                          className="site-button outline outline-1"
-                        >
-                          Know more <i className="fa fa-long-arrow-right"></i>
-                        </Link>
-                      </div>
+                  <Link
+                    href={`/about`}
+                    title="Know more"
+                    className="site-button outline outline-1"
+                  >
+                    Know more <i className="fa fa-long-arrow-right"></i>
+                  </Link>
+                </div>
 
 
-                
+
                 {/* <h3 className="m-b10">The Project</h3> */}
                 {/* <p style={{ fontSize: "18px", textAlign: "justify" }}>
        
@@ -98,9 +105,9 @@ From large-scale satellite data analytics to the design and deployment of geospa
               </div>
               <div className="col-md-12 col-lg-6">
                 {/* <div className="img-half-bx align-items-stretch"> */}
-                  <img src="/images/Aman_WB.png" alt="Aman Chaudhary" width={500} height={500}  style={{ width: '100%', height: 'auto', borderRadius:"20px" }} />
+                <img src="/images/Aman_WB.png" alt="Aman Chaudhary" width={500} height={500} style={{ width: '100%', height: 'auto', borderRadius: "20px" }} />
 
-                  {/* <Image src="/images/Aman_WB2.png" alt="Aman Chaudhary" width={500} height={600} style={{ width: '100%', height: 'auto' }} /> */}
+                {/* <Image src="/images/Aman_WB2.png" alt="Aman Chaudhary" width={500} height={600} style={{ width: '100%', height: 'auto' }} /> */}
                 {/* </div> */}
               </div>
               {/* <div className="col-md-12 col-lg-12">
@@ -126,7 +133,7 @@ From large-scale satellite data analytics to the design and deployment of geospa
           <div className="section-full content-inner">
             <div className="container">
               <div className="section-head text-black">
-                <h2 className="box-title m-tb0">Core Focus Areas<span className="bg-primary"></span></h2>
+                <h2 className="box-title m-tb0">What I do<span className="bg-primary"></span></h2>
                 <p>I design and build spatial systems that transform complex geodata into tools for real-world decision-making.</p>
               </div>
             </div>

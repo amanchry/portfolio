@@ -4,16 +4,25 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import ProjectFiltersSelect from '@/components/ProjectFiltersSelect';
+
+const PROJECT_TAG_OPTIONS = [
+  'WebGIS',
+  'GeoAI',
+  'Open Source',
+  'Remote Sensing',
+  'Web Development',
+];
 
 export default function NewProjectPage() {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
+  const [selectedTags, setSelectedTags] = useState([]);
   const [form, setForm] = useState({
     projectName: '',
     description: '',
     projectDate: '',
-    tags: '',
     link: '',
     technology: '',
   });
@@ -68,7 +77,7 @@ export default function NewProjectPage() {
       formData.append('description', form.description.trim());
       if (form.projectDate) formData.append('projectDate', form.projectDate);
       formData.append('link', form.link.trim());
-      formData.append('tags', form.tags.trim() ? JSON.stringify(form.tags.split(',').map((s) => s.trim()).filter(Boolean)) : '[]');
+      formData.append('tags', JSON.stringify(selectedTags));
       formData.append('technology', form.technology.trim() ? JSON.stringify(form.technology.split(',').map((s) => s.trim()).filter(Boolean)) : '[]');
       formData.append('image', imageFile);
       carouselFiles.forEach((file) => formData.append('carouselImages', file));
@@ -141,15 +150,13 @@ export default function NewProjectPage() {
                     />
                   </div>
                   <div className="form-group">
-                    <label className="font-weight-700">Tags (comma-separated)</label>
-                    <input
-                      type="text"
-                      name="tags"
-                      className="form-control"
-                      placeholder="e.g. WebGIS, React JS, Leaflet"
-                      value={form.tags}
-                      onChange={handleChange}
+                    <label className="font-weight-700">Tags</label>
+                    <ProjectFiltersSelect
+                      value={selectedTags}
+                      onChange={setSelectedTags}
+                      options={PROJECT_TAG_OPTIONS}
                     />
+                    <p className="text-muted small m-t5 m-b0">Select one or more categories for the projects page filter.</p>
                   </div>
                   <div className="form-group">
                     <label className="font-weight-700">Project date (optional)</label>

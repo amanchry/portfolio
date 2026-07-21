@@ -3,11 +3,7 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import PageTitle from '@/components/PageTitle';
-import Image from 'next/image';
-import Slider from "react-slick";
-import Link from 'next/link';
-import RecentPosts from '@/components/RecentPosts';
-import GallerySection from '@/components/GallerySection';
+import TechSkillsScroller from '@/components/TechSkillsScroller';
 
 const VisitedCountriesMap = dynamic(() => import('@/components/VisitedCountriesMap'), {
     ssr: false,
@@ -120,84 +116,12 @@ const AboutPage = () => {
 
                         {/* <div className="section-full content-inner-1 overlay-primary about-service bg-img-fix" style={{ backgroundImage: "url(" + bg2.src + ")" }}> */}
                         <div className="container">
-                            {/* <div className="section-head  text-center">
+                            <div className="section-head  text-center">
                                 <h2 className="box-title m-tb0 max-w800 m-auto">Technologies I Work With<span className="bg-primary"></span></h2>
                                 <p>I integrate open-source technologies with modern cloud architectures to build scalable, intelligent geospatial solutions. Below are some of the core tools I use in my workflow.</p>
                             </div>
 
-                            <div className="row ">
-
-                                <div className="col-lg-4 col-md-6 col-sm-6 m-b30" >
-                                    <div className="icon-bx-wraper bx-style-1 p-a30 center">
-                                        <div className="skill_logo m-b20">
-                                            <Image src="/images/skills/frontend.jpg" title="Frontend Development" alt="Frontend Development" width={400} height={400} />
-                                        </div>
-                                        <div className="icon-content">
-                                            <h5 className="dlab-tilte">Frontend Development</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6 col-sm-6 m-b30" >
-                                    <div className="icon-bx-wraper bx-style-1 p-a30 center">
-                                        <div className="skill_logo m-b20">
-                                            <Image src="/images/skills/mapping.jpg" title="Frontend Mapping" alt="Frontend Mapping" width={400} height={400} />
-                                        </div>
-                                        <div className="icon-content">
-                                            <h5 className="dlab-tilte">Frontend Mapping</h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-4 col-md-6 col-sm-6 m-b30" >
-                                    <div className="icon-bx-wraper bx-style-1 p-a30 center">
-                                        <div className="skill_logo m-b20">
-                                            <Image src="/images/skills/backend.jpg" title="Backend Development" alt="Backend Development" width={400} height={400} />
-                                        </div>
-                                        <div className="icon-content">
-                                            <h5 className="dlab-tilte">Backend Development</h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-4 col-md-6 col-sm-6 m-b30" >
-                                    <div className="icon-bx-wraper bx-style-1 p-a30 center">
-                                        <div className="skill_logo m-b20">
-                                            <Image src="/images/skills/database.jpg" title="Database" alt="Database" width={400} height={400} />
-                                        </div>
-                                        <div className="icon-content">
-                                            <h5 className="dlab-tilte">Database</h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-4 col-md-6 col-sm-6 m-b30" >
-                                    <div className="icon-bx-wraper bx-style-1 p-a30 center">
-                                        <div className="skill_logo m-b20">
-                                            <Image src="/images/skills/geotech.jpg" title="Geo Tools" alt="Geo Tools" width={400} height={400} />
-                                        </div>
-                                        <div className="icon-content">
-                                            <h5 className="dlab-tilte">Geo Tools</h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-4 col-md-6 col-sm-6 m-b30" >
-                                    <div className="icon-bx-wraper bx-style-1 p-a30 center">
-                                        <div className="skill_logo m-b20">
-                                            <Image src="/images/skills/othertech.jpg" title="Other Tools" alt="Other Tools" width={400} height={400} />
-                                        </div>
-                                        <div className="icon-content">
-                                            <h5 className="dlab-tilte">Other Tools</h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-        
-
-
-
-                            </div> */}
+                            <TechSkillsScroller />
                         </div>
 
                     </div>

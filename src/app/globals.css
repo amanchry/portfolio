@@ -388,10 +388,51 @@ body {
   }
 }
 
+/* Home hero: badge pills for skills / affiliations */
+.badge-pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+}
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  white-space: nowrap;
+  background: #f1f3f9;
+  color: #47506b;
+  border: 1px solid #e2e6f0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+.badge-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.1);
+}
+.badge-pill-accent {
+  background: linear-gradient(135deg, #1c4ed8 0%, #22b8cf 100%);
+  color: #fff;
+  border-color: transparent;
+}
+.badge-pill-accent:hover {
+  box-shadow: 0 6px 16px rgba(28, 78, 216, 0.35);
+}
+@media (max-width: 575px) {
+  .badge-pill {
+    font-size: 12px;
+    padding: 5px 13px;
+  }
+}
+
 /* ── Home hero text sizes ── */
 .home-sub-title {
-  font-size: 18px;
-  line-height: 1.6;
+  margin-bottom: 1.2rem;
 }
 .home-body-text {
   font-size: 18px;
@@ -472,3 +513,277 @@ body {
     padding-bottom: 30px !important;
   }
 }
+
+/* About page: auto-scrolling tech skills */
+.tech-skills-scroller {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 10px;
+}
+
+.tech-marquee-row {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tech-marquee-title {
+  margin: 0;
+  padding: 0 4px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #1e293b;
+}
+
+.tech-marquee {
+  overflow: hidden;
+  width: 100%;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 6%,
+    #000 94%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 6%,
+    #000 94%,
+    transparent
+  );
+}
+
+.tech-marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: max-content;
+  animation: tech-marquee-scroll var(--marquee-duration, 30s) linear infinite;
+}
+
+.tech-marquee-track-reverse {
+  animation-name: tech-marquee-scroll-reverse;
+}
+
+.tech-marquee:hover .tech-marquee-track {
+  animation-play-state: paused;
+}
+
+.tech-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #e5e7ef;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+  white-space: nowrap;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tech-chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+}
+
+.tech-chip-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.tech-chip-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+}
+
+@keyframes tech-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes tech-marquee-scroll-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 767px) {
+  .tech-skills-scroller {
+    gap: 22px;
+  }
+
+  .tech-marquee-title {
+    font-size: 14px;
+  }
+
+  .tech-chip {
+    padding: 8px 14px;
+    gap: 8px;
+  }
+
+  .tech-chip-icon {
+    font-size: 18px;
+  }
+
+  .tech-chip-label {
+    font-size: 13px;
+  }
+}
+
+/* Projects page: category filters */
+.project-filters {
+  display: flex;
+  justify-content: center;
+}
+
+.project-filters-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-filters-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.project-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid #dde1ea;
+  background: #fff;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.project-filter-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+  border-color: #c7d0e0;
+}
+
+.project-filter-btn-active {
+  background: linear-gradient(135deg, #ff5e14 0%, #fcad89 100%);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(28, 78, 216, 0.25);
+}
+
+.project-filter-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.08);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.project-filter-btn-active .project-filter-count {
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .project-filter-btn {
+    font-size: 13px;
+    padding: 7px 13px;
+  }
+}
+
+/* Admin: project filters multi-select dropdown */
+.project-filters-select {
+  position: relative;
+}
+
+.project-filters-select-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  min-height: 44px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.project-filters-select-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  z-index: 20;
+  max-height: 260px;
+  overflow-y: auto;
+  padding: 8px;
+  border: 1px solid #dde1ea;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+}
+
+.project-filters-select-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  margin: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.project-filters-select-option:hover {
+  background: #f8fafc;
+}
+
+.project-filters-select-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.project-filters-select-tag {
+  border: 1px solid #dbe2ef;
+  border-radius: 999px;
+  background: #f8fafc;
+  color: #334155;
+  font-size: 12px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.project-filters-select-tag:hover {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+}
+
